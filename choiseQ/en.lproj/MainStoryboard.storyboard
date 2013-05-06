@@ -27,7 +27,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="xlA-hw-je6" kind="modal" id="Ngw-kI-z65"/>
+                                            <segue destination="xlA-hw-je6" kind="modal" modalTransitionStyle="flipHorizontal" id="Ngw-kI-z65"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-mh-alG">
@@ -111,7 +111,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="k9m-yt-BjX" kind="modal" id="a8H-Sm-YLI"/>
+                                    <segue destination="k9m-yt-BjX" kind="modal" modalTransitionStyle="flipHorizontal" id="a8H-Sm-YLI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ay-au-UXw">
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQQ-JF-XL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="23"/>
+            <point key="canvasLocation" x="463" y="-340"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JcC-HS-mR0">
@@ -243,7 +243,7 @@
                                 <items>
                                     <barButtonItem title="Item" id="clz-sm-bz5">
                                         <connections>
-                                            <segue destination="2" kind="push" id="J49-q3-1WL"/>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="84k-yt-d5P"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fSO-oV-zNI"/>
@@ -251,7 +251,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="GPB-yH-yzu"/>
                                     <barButtonItem title="Item" id="xjW-yS-8qg">
                                         <connections>
-                                            <segue destination="ABe-6s-pGN" kind="push" id="eBt-DQ-W7e"/>
+                                            <segue destination="ABe-6s-pGN" kind="modal" modalTransitionStyle="flipHorizontal" id="eBt-DQ-W7e"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -294,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAB-O0-upf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="-147"/>
+            <point key="canvasLocation" x="1338" y="-14"/>
         </scene>
     </scenes>
     <classes>
