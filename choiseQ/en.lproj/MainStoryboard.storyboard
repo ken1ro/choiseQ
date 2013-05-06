@@ -238,6 +238,14 @@
                                     <constraint firstAttribute="width" constant="204" id="xcc-MD-s3b"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="堀更新したよん" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXr-9T-BEr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="pJQ-Lp-6T7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -249,9 +257,11 @@
                             <constraint firstItem="jDK-R2-F7z" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="HL4-TE-Lwd"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Kqi-M4-cTY"/>
                             <constraint firstItem="293-iW-yym" firstAttribute="top" secondItem="6dy-ue-xuN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Oy5-ZW-mXg"/>
+                            <constraint firstItem="xXr-9T-BEr" firstAttribute="top" secondItem="jDK-R2-F7z" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SpE-aE-JeH"/>
                             <constraint firstAttribute="trailing" secondItem="mwl-BU-ycp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eMR-A4-9p7"/>
                             <constraint firstItem="GRw-TN-Ahf" firstAttribute="leading" secondItem="293-iW-yym" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gt9-2R-Hcv"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="15" id="rP9-AM-Rr9"/>
+                            <constraint firstItem="xXr-9T-BEr" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="89" id="wPz-2o-FNd"/>
                             <constraint firstItem="jDK-R2-F7z" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="zWz-s3-9Mm"/>
                         </constraints>
                     </view>
