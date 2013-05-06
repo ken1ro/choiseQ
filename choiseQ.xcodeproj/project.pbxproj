@@ -23,6 +23,8 @@
 		BE9E8C0B173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8C13173794FA00495938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE9E8C11173794FA00495938 /* InfoPlist.strings */; };
 		BE9E8C16173794FA00495938 /* choiseQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E8C15173794FA00495938 /* choiseQTests.m */; };
+		BE9E8C4E1737B91400495938 /* QuestionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E8C4D1737B91400495938 /* QuestionUIViewController.m */; };
+		BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E8C501737B98300495938 /* AnswerUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		BE9E8C12173794FA00495938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE9E8C14173794FA00495938 /* choiseQTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = choiseQTests.h; sourceTree = "<group>"; };
 		BE9E8C15173794FA00495938 /* choiseQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = choiseQTests.m; sourceTree = "<group>"; };
+		BE9E8C4C1737B91400495938 /* QuestionUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionUIViewController.h; sourceTree = "<group>"; };
+		BE9E8C4D1737B91400495938 /* QuestionUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionUIViewController.m; sourceTree = "<group>"; };
+		BE9E8C4F1737B98300495938 /* AnswerUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerUIViewController.h; sourceTree = "<group>"; };
+		BE9E8C501737B98300495938 /* AnswerUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				BE9E8BF3173794FA00495938 /* AppDelegate.h */,
 				BE9E8BF4173794FA00495938 /* AppDelegate.m */,
 				BE9E8BFC173794FA00495938 /* MainStoryboard.storyboard */,
+				BE9E8C4F1737B98300495938 /* AnswerUIViewController.h */,
+				BE9E8C501737B98300495938 /* AnswerUIViewController.m */,
+				BE9E8C4C1737B91400495938 /* QuestionUIViewController.h */,
+				BE9E8C4D1737B91400495938 /* QuestionUIViewController.m */,
 				BE9E8BFF173794FA00495938 /* ViewController.h */,
 				BE9E8C00173794FA00495938 /* ViewController.m */,
 				BE9E8BEB173794FA00495938 /* Supporting Files */,
@@ -273,6 +283,8 @@
 				BE9E8BF1173794FA00495938 /* main.m in Sources */,
 				BE9E8BF5173794FA00495938 /* AppDelegate.m in Sources */,
 				BE9E8C01173794FA00495938 /* ViewController.m in Sources */,
+				BE9E8C4E1737B91400495938 /* QuestionUIViewController.m in Sources */,
+				BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +469,7 @@
 				BE9E8C1B173794FA00495938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9E8C1C173794FA00495938 /* Build configuration list for PBXNativeTarget "choiseQTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				BE9E8C1E173794FA00495938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
