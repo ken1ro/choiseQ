@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -50,6 +50,11 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-te-jeK">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -57,10 +62,12 @@
                                     <constraint firstItem="CbH-BP-0oZ" firstAttribute="top" secondItem="4Xx-mh-alG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9ju-51-cTj"/>
                                     <constraint firstItem="4Xx-mh-alG" firstAttribute="trailing" secondItem="Fgc-3n-Qx3" secondAttribute="trailing" type="default" id="A4x-Cq-fX5"/>
                                     <constraint firstItem="CbH-BP-0oZ" firstAttribute="leading" secondItem="4Xx-mh-alG" secondAttribute="leading" type="default" id="G6Y-gT-PN7"/>
+                                    <constraint firstItem="VKU-te-jeK" firstAttribute="top" secondItem="vLv-Zl-hxq" secondAttribute="top" constant="72" id="KG9-c8-Ngj"/>
                                     <constraint firstItem="Fgc-3n-Qx3" firstAttribute="top" secondItem="vLv-Zl-hxq" secondAttribute="top" constant="189" id="UCl-Hf-6nW"/>
                                     <constraint firstItem="CbH-BP-0oZ" firstAttribute="trailing" secondItem="4Xx-mh-alG" secondAttribute="trailing" type="default" id="Zey-4p-hNB"/>
                                     <constraint firstItem="4Xx-mh-alG" firstAttribute="leading" secondItem="Fgc-3n-Qx3" secondAttribute="leading" type="default" id="b2h-x6-HHw"/>
                                     <constraint firstItem="4Xx-mh-alG" firstAttribute="top" secondItem="Fgc-3n-Qx3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eOV-VM-oai"/>
+                                    <constraint firstItem="VKU-te-jeK" firstAttribute="centerX" secondItem="vLv-Zl-hxq" secondAttribute="centerX" type="default" id="qGq-yw-gly"/>
                                 </constraints>
                             </view>
                         </subviews>
