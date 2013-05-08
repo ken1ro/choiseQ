@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface AnswerUIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *AnswerTab;
-@property (weak, nonatomic) IBOutlet UIButton *QuestionTab;
-@property (weak, nonatomic) IBOutlet UIImageView *TOFImg;
-@property (weak, nonatomic) IBOutlet UIImageView *TOFWordImg;
+@property (weak, nonatomic) IBOutlet UIButton *answerTab;
+@property (weak, nonatomic) IBOutlet UIButton *questionTab;
+@property (weak, nonatomic) IBOutlet UIImageView *tofImg;
+@property (weak, nonatomic) IBOutlet UIImageView *tofWordImg;
+@property (weak, nonatomic) IBOutlet UILabel *yourAnswerLbl;
 
 @end

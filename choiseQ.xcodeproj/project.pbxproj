@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */; };
 		BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE4173794FA00495938 /* UIKit.framework */; };
 		BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8BE9173794FA00495938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE8173794FA00495938 /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizResultsViewController.h; sourceTree = "<group>"; };
+		BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizResultsViewController.m; sourceTree = "<group>"; };
 		BE9E8BE1173794FA00495938 /* choiseQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = choiseQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9E8BE4173794FA00495938 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE9E8BE6173794FA00495938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,8 @@
 				BE9E8BF3173794FA00495938 /* AppDelegate.h */,
 				BE9E8BF4173794FA00495938 /* AppDelegate.m */,
 				BE9E8BFC173794FA00495938 /* MainStoryboard.storyboard */,
+				BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */,
+				BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */,
 				BE9E8C4F1737B98300495938 /* AnswerUIViewController.h */,
 				BE9E8C501737B98300495938 /* AnswerUIViewController.m */,
 				BE9E8C4C1737B91400495938 /* QuestionUIViewController.h */,
@@ -285,6 +290,7 @@
 				BE9E8C01173794FA00495938 /* ViewController.m in Sources */,
 				BE9E8C4E1737B91400495938 /* QuestionUIViewController.m in Sources */,
 				BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */,
+				BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

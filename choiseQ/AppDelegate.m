@@ -9,10 +9,12 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize dSelectedAnswer;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.dSelectedAnswer = @"";
     return YES;
 }
 							

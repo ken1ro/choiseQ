@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface QuestionUIViewController : UIViewController
+@interface QuestionUIViewController : UIViewController{
+    NSString *selectedAnswerBtn;
+}
+
+@property (nonatomic ,retain) NSString *selectedAnswerBtn;
+@property (weak, nonatomic) IBOutlet UITextView *QuestionTextView;
+
 - (IBAction)selectA:(id)sender;
 - (IBAction)selectB:(id)sender;
 - (IBAction)selectC:(id)sender;
 - (IBAction)selectD:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextView *QuestionTextView;
+- (void)setSelectedAnswer:(NSString *)_selectedAnswerBtn;
 
 @end

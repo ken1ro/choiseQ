@@ -22,7 +22,13 @@
     }
     return self;
 }
+//view初期化時
+- (void)viewWillAppear:(BOOL)animated{
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    self.yourAnswerLbl.text = appDelegate.dSelectedAnswer;
+    NSLog(@"view");
 
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,8 +44,9 @@
 - (void)viewDidUnload {
     [self setAnswerTab:nil];
     [self setQuestionTab:nil];
-    [self setTOFImg:nil];
-    [self setTOFWordImg:nil];
+    [self setTofImg:nil];
+    [self setTofWordImg:nil];
+    [self setYourAnswerLbl:nil];
     [super viewDidUnload];
 }
 @end
