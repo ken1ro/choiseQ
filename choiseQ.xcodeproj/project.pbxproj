@@ -197,12 +197,12 @@
 			children = (
 				BEA3223F173FAD3400C08BCD /* batsu.png */,
 				BEA32240173FAD3400C08BCD /* False.png */,
-				BEA32241173FAD3400C08BCD /* maru.png */,
-				BEA32242173FAD3400C08BCD /* True.png */,
 				BEA32247173FB5EA00C08BCD /* kaisetsu_tab_off.gif */,
 				BEA32248173FB5EA00C08BCD /* kaisetsu_tab_on.gif */,
+				BEA32241173FAD3400C08BCD /* maru.png */,
 				BEA32249173FB5EA00C08BCD /* monndai_tab_off.gif */,
 				BEA3224A173FB5EA00C08BCD /* monndai_tab_on.gif */,
+				BEA32242173FAD3400C08BCD /* True.png */,
 			);
 			name = img;
 			sourceTree = "<group>";
