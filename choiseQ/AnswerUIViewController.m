@@ -12,7 +12,11 @@
 
 @end
 
+
 @implementation AnswerUIViewController
+@synthesize tofImg;
+@synthesize tofWordImg;
+@synthesize tabSwitch;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,8 +29,26 @@
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    self.yourAnswerLbl.text = appDelegate.dSelectedAnswer;
-    NSLog(@"view");
+    NSString *yourAnswer = appDelegate.dSelectedAnswer;
+    //前画面で選んだ選択肢を表示
+    self.yourAnswerLbl.text = yourAnswer;
+    //正解か不正解かを判定する。
+    
+    if ([self judgeTOF:yourAnswer]) {
+        //正解なら○と正解を表示
+        tofImg.image = [UIImage imageNamed:@"maru.png"];
+        tofWordImg.image = [UIImage imageNamed:@"True.png"];
+        
+    }else{
+        //不正解なら×と不正解を表示
+        tofImg.image = [UIImage imageNamed:@"batsu.png"];
+        tofWordImg.image = [UIImage imageNamed:@"False.png"];
+
+    }
+    
+    //解説タブか、問題タブか。初期は解説タブ
+    self.tabSwitch = 1;
+    [self selectTabSwitch];
 
 }
 - (void)viewDidLoad
@@ -47,6 +69,75 @@
     [self setTofImg:nil];
     [self setTofWordImg:nil];
     [self setYourAnswerLbl:nil];
+    [self setAnswerTextView:nil];
     [super viewDidUnload];
 }
+
+/*//////////////////////////////////////////////////////////
+ 正解か不正解かを判定する。
+ 引数：ユーザの選択肢
+ 返値：正解なら１、不正解なら０
+ *///////////////////////////////////////////////////////////
+- (int) judgeTOF:(NSString *)_yourAnser{
+    int judged = 0;
+    NSString *correctAnswer = @"a";
+    
+    //DBから正解を持ってくる
+    //correctAnswer = ???
+    
+    //判定
+    if ([_yourAnser isEqualToString:correctAnswer]){
+        judged = 1;
+    }else{
+        judged = 0;
+    }
+    
+    return judged;
+}
+
+/*//////////////////////////////////////////////////////////
+ 解説表示タブを押下時に呼ばれる。
+ tabSwitchに１（＝解説）を入れて、
+ selectTabSwitchを呼び出す。
+*///////////////////////////////////////////////////////////
+
+- (IBAction)doKaisetsu:(id)sender {
+    self.tabSwitch = 1;
+    [self selectTabSwitch];
+}
+
+/*//////////////////////////////////////////////////////////
+ 問題は...表示タブを押下時に呼ばれる。
+ tabSwitchに２（＝問題）を入れて、
+ selectTabSwitchを呼び出す。
+ *///////////////////////////////////////////////////////////
+- (IBAction)doMondai:(id)sender {
+    self.tabSwitch = 2;
+    [self selectTabSwitch];
+}
+
+/*//////////////////////////////////////////////////////////
+ 解説表示か、問題表示かを切り替える。
+ tabSwitchが
+ -１なら解説を表示。
+ -２なら問題を表示。
+ *///////////////////////////////////////////////////////////
+- (void) selectTabSwitch{
+    if (self.tabSwitch == 1){
+        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on.gif"] forState:UIControlStateNormal];
+        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"monndai_tab_off.gif"] forState:UIControlStateNormal];
+        
+        //ここで表示する文章を変える。
+        self.answerTextView.text =@"解説をここに表示する。";
+        
+    }else{
+        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off.gif"] forState:UIControlStateNormal];
+        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"monndai_tab_on.gif"] forState:UIControlStateNormal];
+        
+        //ここで表示する文章を変える。
+        self.answerTextView.text =@"問題をここに表示する。";
+        
+    }
+}
+
 @end

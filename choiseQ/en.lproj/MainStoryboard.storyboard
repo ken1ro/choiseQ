@@ -221,41 +221,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="293-iW-yym">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="293-iW-yym">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="wzc-2l-b8I"/>
+                                    <constraint firstAttribute="height" constant="42" id="6LB-og-u6q"/>
+                                    <constraint firstAttribute="width" constant="160" id="J87-Nu-CgX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="解答">
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doKaisetsu:" destination="k9m-yt-BjX" eventType="touchUpInside" id="3UW-uK-T3N"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-TN-Ahf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-TN-Ahf">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="KrI-jY-Lnc"/>
+                                    <constraint firstAttribute="width" constant="160" id="NYm-RA-smf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="問題は・・">
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doMondai:" destination="k9m-yt-BjX" eventType="touchUpInside" id="hOj-sM-uxH"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dy-ue-xuN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="maru.png" translatesAutoresizingMaskIntoConstraints="NO" id="6dy-ue-xuN">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="EBS-gi-81h"/>
-                                    <constraint firstAttribute="width" constant="50" id="nAv-xm-vyD"/>
+                                    <constraint firstAttribute="width" constant="50" id="PUz-gJ-vH9"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-BU-ycp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="True.png" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-BU-ycp">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="204" id="xcc-MD-s3b"/>
+                                    <constraint firstAttribute="width" constant="141" id="cZc-6x-dSr"/>
                                 </constraints>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGA-KF-2HK">
@@ -281,24 +288,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ8-nA-h49">
+                                <color key="backgroundColor" red="0.40784313725490196" green="0.81568627450980391" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="WJR-sM-Ql1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40784313725490196" green="0.81568627450980391" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TGA-KF-2HK" firstAttribute="bottom" secondItem="8wa-gu-Kmf" secondAttribute="bottom" type="default" id="3RG-Me-TaD"/>
-                            <constraint firstItem="mwl-BU-ycp" firstAttribute="top" secondItem="rzm-vz-Vkk" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8cu-ob-4NS"/>
-                            <constraint firstItem="293-iW-yym" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="6" id="8is-yl-AXS"/>
-                            <constraint firstItem="293-iW-yym" firstAttribute="baseline" secondItem="GRw-TN-Ahf" secondAttribute="baseline" type="default" id="9qT-1Y-F1y"/>
+                            <constraint firstItem="GRw-TN-Ahf" firstAttribute="top" secondItem="293-iW-yym" secondAttribute="top" type="default" id="5OD-rP-ZVk"/>
                             <constraint firstItem="jDK-R2-F7z" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="HL4-TE-Lwd"/>
+                            <constraint firstItem="GRw-TN-Ahf" firstAttribute="bottom" secondItem="OZ8-nA-h49" secondAttribute="bottom" type="default" id="K46-vG-0ig"/>
+                            <constraint firstItem="mwl-BU-ycp" firstAttribute="centerX" secondItem="OZ8-nA-h49" secondAttribute="centerX" type="default" id="K6s-BD-EGa"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Kqi-M4-cTY"/>
+                            <constraint firstItem="OZ8-nA-h49" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="La3-OX-2gl"/>
                             <constraint firstAttribute="trailing" secondItem="rzm-vz-Vkk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="N2p-EC-MAd"/>
+                            <constraint firstItem="GRw-TN-Ahf" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="aAg-OA-0fi"/>
                             <constraint firstItem="TGA-KF-2HK" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="aza-Lu-kLX"/>
-                            <constraint firstAttribute="trailing" secondItem="mwl-BU-ycp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eMR-A4-9p7"/>
-                            <constraint firstItem="GRw-TN-Ahf" firstAttribute="leading" secondItem="293-iW-yym" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gt9-2R-Hcv"/>
+                            <constraint firstItem="293-iW-yym" firstAttribute="bottom" secondItem="GRw-TN-Ahf" secondAttribute="bottom" type="default" id="etV-gB-PVu"/>
+                            <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="169" id="hGh-cR-wfJ"/>
                             <constraint firstItem="rzm-vz-Vkk" firstAttribute="baseline" secondItem="TcV-ir-9gI" secondAttribute="baseline" type="default" id="nWm-1n-gih"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="top" secondItem="TcV-ir-9gI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nz8-wp-mUw"/>
+                            <constraint firstItem="mwl-BU-ycp" firstAttribute="top" secondItem="TcV-ir-9gI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oJa-FM-sR5"/>
                             <constraint firstItem="TcV-ir-9gI" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oyP-7J-kZS"/>
                             <constraint firstItem="TcV-ir-9gI" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="11" id="plo-Z3-qtQ"/>
-                            <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="158" id="ruw-Ev-8JH"/>
+                            <constraint firstItem="293-iW-yym" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="qle-ij-lew"/>
+                            <constraint firstItem="OZ8-nA-h49" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="rRY-fX-s0M"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="bottom" secondItem="mwl-BU-ycp" secondAttribute="bottom" type="default" id="sdq-bM-uaO"/>
                             <constraint firstItem="293-iW-yym" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="102" id="wAO-wm-PQF"/>
                             <constraint firstItem="jDK-R2-F7z" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="zWz-s3-9Mm"/>
@@ -307,6 +327,7 @@
                     </view>
                     <connections>
                         <outlet property="answerTab" destination="293-iW-yym" id="zYS-em-XCA"/>
+                        <outlet property="answerTextView" destination="jDK-R2-F7z" id="ZnO-5V-sI3"/>
                         <outlet property="questionTab" destination="GRw-TN-Ahf" id="E0L-Vc-BYb"/>
                         <outlet property="tofImg" destination="6dy-ue-xuN" id="4GN-Z1-gn7"/>
                         <outlet property="tofWordImg" destination="mwl-BU-ycp" id="Tmk-WD-nBA"/>
@@ -399,11 +420,18 @@
             <point key="canvasLocation" x="1338" y="-14"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="True.png" width="420" height="157"/>
+        <image name="maru.png" width="324" height="321"/>
+    </resources>
     <classes>
         <class className="AnswerUIViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
             <relationships>
+                <relationship kind="action" name="doKaisetsu:"/>
+                <relationship kind="action" name="doMondai:"/>
                 <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
