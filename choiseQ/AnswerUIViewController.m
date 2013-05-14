@@ -117,6 +117,44 @@
 }
 
 /*//////////////////////////////////////////////////////////
+ Shareボタン押下時に呼ばれる。
+ 
+ 
+ *///////////////////////////////////////////////////////////
+- (IBAction)doShare:(id)sender {
+    //選択肢を表示
+    UIActionSheet *shareActionSheet = [[UIActionSheet alloc] init];
+    shareActionSheet.title = @"この問題を・・・";
+    shareActionSheet.delegate = self;
+    [shareActionSheet addButtonWithTitle:@"Facebookに投稿する。"];
+    [shareActionSheet addButtonWithTitle:@"Twitterに投稿する。"];
+    [shareActionSheet addButtonWithTitle:@"あとは。。。"];
+    [shareActionSheet addButtonWithTitle:@"キャンセル"];
+    shareActionSheet.cancelButtonIndex = 4;
+    shareActionSheet.destructiveButtonIndex = 4;
+    shareActionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
+    [shareActionSheet showInView:self.view.window];
+}
+
+- (void) actionSheet:(UIActionSheet *)shareActionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            // １番目のボタンが押されたときの処理を記述する
+            //　つまり、Facebookに投稿する。の時
+            break;
+        case 1:
+            // ２番目のボタンが押されたときの処理を記述する
+            // つまり、Facebookに投稿する。の時
+            break;
+        case 2:
+            // ３番目のボタンが押されたときの処理を記述する
+            // つまり、、、追加する時。
+            break;
+    }
+    
+}
+
+/*//////////////////////////////////////////////////////////
  解説表示か、問題表示かを切り替える。
  tabSwitchが
  -１なら解説を表示。

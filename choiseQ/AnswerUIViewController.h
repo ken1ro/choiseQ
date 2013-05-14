@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface AnswerUIViewController : UIViewController
+@interface AnswerUIViewController : UIViewController<UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *answerTab;
 @property (weak, nonatomic) IBOutlet UIButton *questionTab;
 @property (weak, nonatomic) IBOutlet UIImageView *tofImg;
@@ -21,5 +21,6 @@
 - (int) judgeTOF:(NSString *)_yourAnser;
 - (IBAction)doKaisetsu:(id)sender;
 - (IBAction)doMondai:(id)sender;
+- (IBAction)doShare:(id)sender;
 
 @end
