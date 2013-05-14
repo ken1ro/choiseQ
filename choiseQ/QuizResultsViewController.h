@@ -10,5 +10,6 @@
 
 @interface QuizResultsViewController : UIViewController{
 }
+- (IBAction)doHome:(id)sender;
 
 @end

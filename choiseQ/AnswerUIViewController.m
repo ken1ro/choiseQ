@@ -118,8 +118,11 @@
 
 /*//////////////////////////////////////////////////////////
  Shareボタン押下時に呼ばれる。
- 
- 
+ 以下の選択肢を表示
+ １．「Facebookに投稿する。」
+ ２．「Twitterに投稿する。」
+ ３．「あとは。。。」（これは拡張用）
+ ４．「キャンセル」
  *///////////////////////////////////////////////////////////
 - (IBAction)doShare:(id)sender {
     //選択肢を表示
@@ -136,6 +139,35 @@
     [shareActionSheet showInView:self.view.window];
 }
 
+
+/*//////////////////////////////////////////////////////////
+ Nextボタン押下時に呼ばれる。
+ 問題回答数によって、次画面に遷移
+ *///////////////////////////////////////////////////////////
+- (IBAction)doNext:(id)sender {
+    //これは動作確認用。そのうち替えてね。
+    int questionCount = 10;
+    int questionCountLimit = 10;
+
+    if(questionCount < questionCountLimit){
+        //解答問題数（questionCount）が指定問題数（questionCountLimit)より小さければ
+        //問題を繰り返すために、問題画面に遷移する。
+        [self performSegueWithIdentifier:@"toQuestionView" sender:self];
+
+        
+    }else{
+        //そうでなければ、クイズ結果画面に遷移する。
+        [self performSegueWithIdentifier:@"toQuizResultView" sender:self];        
+        
+    }
+
+}
+
+
+/*//////////////////////////////////////////////////////////
+ Shareボタン押下後のActionSheetのボタン押下時に呼ばれる。
+
+*///////////////////////////////////////////////////////////
 - (void) actionSheet:(UIActionSheet *)shareActionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     switch (buttonIndex) {
         case 0:

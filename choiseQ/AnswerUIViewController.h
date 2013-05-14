@@ -22,5 +22,6 @@
 - (IBAction)doKaisetsu:(id)sender;
 - (IBAction)doMondai:(id)sender;
 - (IBAction)doShare:(id)sender;
+- (IBAction)doNext:(id)sender;
 
 @end

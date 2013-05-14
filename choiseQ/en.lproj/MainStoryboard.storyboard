@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQQ-JF-XL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="-340"/>
+            <point key="canvasLocation" x="439" y="-635"/>
         </scene>
         <!--AnswerUI View Controller-->
         <scene sceneID="JcC-HS-mR0">
@@ -290,7 +290,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="GPB-yH-yzu"/>
-                                    <barButtonItem title="Next" id="xjW-yS-8qg"/>
+                                    <barButtonItem title="Next" id="xjW-yS-8qg">
+                                        <connections>
+                                            <action selector="doNext:" destination="k9m-yt-BjX" id="ZkH-ns-8pW"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あなたの選んだ解答は・・・" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-ir-9gI">
@@ -347,11 +351,13 @@
                         <outlet property="tofImg" destination="6dy-ue-xuN" id="4GN-Z1-gn7"/>
                         <outlet property="tofWordImg" destination="mwl-BU-ycp" id="Tmk-WD-nBA"/>
                         <outlet property="yourAnswerLbl" destination="rzm-vz-Vkk" id="ojm-52-iDF"/>
+                        <segue destination="ABe-6s-pGN" kind="modal" identifier="toQuizResultView" modalTransitionStyle="crossDissolve" id="2mQ-wW-25J"/>
+                        <segue destination="xlA-hw-je6" kind="modal" identifier="toQuestionView" id="0BY-Wx-Q1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5e-7q-dW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="23"/>
+            <point key="canvasLocation" x="617" y="85"/>
         </scene>
         <!--Quiz Results View Controller-->
         <scene sceneID="hWD-EB-Nhm">
@@ -402,7 +408,12 @@
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-Hc-nn9">
                                 <items>
-                                    <barButtonItem title="home" id="svY-UM-aoA"/>
+                                    <barButtonItem title="home" id="svY-UM-aoA">
+                                        <connections>
+                                            <action selector="doHome:" destination="ABe-6s-pGN" id="OVA-w9-2Hq"/>
+                                            <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="H3s-hX-iE2"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="rCf-fT-Pos"/>
                                     <barButtonItem title="Share" id="0pJ-Bs-ZWb"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Zgu-m3-B6j"/>
@@ -429,10 +440,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M2g-il-jNN"/>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="toHomeView" id="pce-hx-i3X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAB-O0-upf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="-14"/>
+            <point key="canvasLocation" x="239" y="495"/>
         </scene>
     </scenes>
     <resources>
@@ -443,9 +457,52 @@
         <image name="d.png" width="163" height="163"/>
         <image name="maru.png" width="324" height="321"/>
     </resources>
+    <classes>
+        <class className="AnswerUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doKaisetsu:"/>
+                <relationship kind="action" name="doMondai:"/>
+                <relationship kind="action" name="doNext:"/>
+                <relationship kind="action" name="doShare:"/>
+                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QuestionUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectA:"/>
+                <relationship kind="action" name="selectB:"/>
+                <relationship kind="action" name="selectC:"/>
+                <relationship kind="action" name="selectD:"/>
+                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="QuizResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doHome:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0BY-Wx-Q1u"/>
+        <segue reference="H3s-hX-iE2"/>
+    </inferredMetricsTieBreakers>
 </document>
