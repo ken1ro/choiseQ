@@ -13,6 +13,7 @@
 @end
 
 @implementation QuestionUIViewController
+@synthesize questionNoLbl;
 @synthesize selectedAnswerBtn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -25,8 +26,14 @@
 }
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    //出題数をカウント
+    appDelegate.qCount ++;
+    self.questionNoLbl.text = [NSString stringWithFormat:@"第 %d 問", appDelegate.qCount];
+    
 
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,6 +48,7 @@
 
 - (void)viewDidUnload {
     [self setQuestionTextView:nil];
+    [self setQuestionNoLbl:nil];
     [super viewDidUnload];
 }
 
@@ -66,6 +74,11 @@
 - (IBAction)selectD:(id)sender {
     [self setSelectedAnswer:@"d"];
 }
+
+/*//////////////////////////////////////////////////////////
+ 解答ボタンを押した時に呼ばれる
+ 選択した解答をdelegateに入れて、次画面への遷移を呼び出す。
+ *///////////////////////////////////////////////////////////
 
 - (void)setSelectedAnswer:(NSString *)_selectedAnswerBtn{
     self.selectedAnswerBtn = _selectedAnswerBtn;

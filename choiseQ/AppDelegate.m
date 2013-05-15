@@ -10,11 +10,13 @@
 
 @implementation AppDelegate
 @synthesize dSelectedAnswer;
+@synthesize qCount;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     self.dSelectedAnswer = @"";
+    self.qCount = 0;
     return YES;
 }
 							

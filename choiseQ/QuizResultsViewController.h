@@ -11,5 +11,6 @@
 @interface QuizResultsViewController : UIViewController{
 }
 - (IBAction)doHome:(id)sender;
+- (IBAction)niseShare:(id)sender;
 
 @end

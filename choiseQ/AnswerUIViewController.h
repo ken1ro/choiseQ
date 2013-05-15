@@ -23,5 +23,6 @@
 - (IBAction)doMondai:(id)sender;
 - (IBAction)doShare:(id)sender;
 - (IBAction)doNext:(id)sender;
+- (IBAction)doHome:(id)sender;
 
 @end

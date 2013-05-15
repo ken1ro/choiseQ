@@ -145,9 +145,9 @@
  問題回答数によって、次画面に遷移
  *///////////////////////////////////////////////////////////
 - (IBAction)doNext:(id)sender {
-    //これは動作確認用。そのうち替えてね。
-    int questionCount = 10;
-    int questionCountLimit = 10;
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    int questionCount = appDelegate.qCount;
+    int questionCountLimit = 5;
 
     if(questionCount < questionCountLimit){
         //解答問題数（questionCount）が指定問題数（questionCountLimit)より小さければ
@@ -157,10 +157,16 @@
         
     }else{
         //そうでなければ、クイズ結果画面に遷移する。
+        appDelegate.qCount = 0;
         [self performSegueWithIdentifier:@"toQuizResultView" sender:self];        
         
     }
 
+}
+
+- (IBAction)doHome:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    appDelegate.qCount = 0;
 }
 
 

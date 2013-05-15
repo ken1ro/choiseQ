@@ -13,6 +13,9 @@
 }
 
 @property (strong, nonatomic) UIWindow *window;
+//選択した答えを次画面に引き継ぐための変数
 @property (nonatomic, retain) NSString *dSelectedAnswer;
+//現在の問題数をカウントする変数
+@property (nonatomic, assign) int qCount;
 
 @end

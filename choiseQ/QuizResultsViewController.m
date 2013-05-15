@@ -37,4 +37,11 @@
 
 - (IBAction)doHome:(id)sender {
 }
+
+- (IBAction)niseShare:(id)sender {
+    //ゴミコード
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"このボタンいらんくね？" message:@"いらんくね？" delegate:self cancelButtonTitle:@"そう思う。"
+                                          otherButtonTitles:@"そうかもしれない。", nil];
+    [alert show];
+}
 @end

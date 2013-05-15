@@ -13,6 +13,7 @@
     NSString *selectedAnswerBtn;
 }
 
+@property (weak, nonatomic) IBOutlet UILabel *questionNoLbl;
 @property (nonatomic ,retain) NSString *selectedAnswerBtn;
 @property (weak, nonatomic) IBOutlet UITextView *QuestionTextView;
 
