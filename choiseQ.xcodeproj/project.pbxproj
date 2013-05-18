@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */; };
+		BE7D20D517476FD6001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D417476FD6001956A0 /* start_button.png */; };
 		BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE4173794FA00495938 /* UIKit.framework */; };
 		BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8BE9173794FA00495938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE8173794FA00495938 /* CoreGraphics.framework */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizResultsViewController.h; sourceTree = "<group>"; };
 		BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizResultsViewController.m; sourceTree = "<group>"; };
+		BE7D20D417476FD6001956A0 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = img/start_button.png; sourceTree = "<group>"; };
 		BE9E8BE1173794FA00495938 /* choiseQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = choiseQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9E8BE4173794FA00495938 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE9E8BE6173794FA00495938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -203,6 +205,7 @@
 		BEA3223E173FAD1200C08BCD /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BE7D20D417476FD6001956A0 /* start_button.png */,
 				BEA32253173FCA3900C08BCD /* a.png */,
 				BEA32254173FCA3900C08BCD /* b.png */,
 				BEA32255173FCA3900C08BCD /* c.png */,
@@ -307,6 +310,7 @@
 				BEA32258173FCA3900C08BCD /* b.png in Resources */,
 				BEA32259173FCA3900C08BCD /* c.png in Resources */,
 				BEA3225A173FCA3900C08BCD /* d.png in Resources */,
+				BE7D20D517476FD6001956A0 /* start_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +425,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -445,7 +449,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

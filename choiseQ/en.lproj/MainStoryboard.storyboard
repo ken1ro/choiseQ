@@ -14,12 +14,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-Zl-hxq">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-3n-Qx3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-3n-Qx3">
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8yh-iz-XPW"/>
                                             <constraint firstAttribute="width" constant="148" id="z7m-Es-5pX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="問題">
+                                        <state key="normal" title="問題" image="start_button.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -96,7 +97,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-EM-dsH">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="Cmi-fN-d12"/>
-                                    <constraint firstAttribute="height" constant="44" id="v8c-cy-XRe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="A" image="a.png">
@@ -128,6 +128,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edn-cW-SfT">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Wrd-D7-2VG"/>
                                     <constraint firstAttribute="width" constant="47" id="eFJ-b9-MHI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -184,24 +185,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="top" type="default" id="0PP-RB-V0s"/>
                             <constraint firstItem="mLn-EM-dsH" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="54" id="2yF-F7-0lE"/>
                             <constraint firstAttribute="trailing" secondItem="TY2-Dv-YwF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="A8a-ni-Peh"/>
-                            <constraint firstAttribute="bottom" secondItem="mLn-EM-dsH" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="BMK-dK-mIP"/>
                             <constraint firstItem="3Ge-H1-HhM" firstAttribute="leading" secondItem="edn-cW-SfT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Hgh-jJ-d3u"/>
                             <constraint firstItem="TY2-Dv-YwF" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Iwm-Mk-3f7"/>
                             <constraint firstItem="TY2-Dv-YwF" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="55" id="J9K-Ks-ngs"/>
-                            <constraint firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KJK-w1-m9S"/>
-                            <constraint firstItem="mLn-EM-dsH" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="top" type="default" id="MCQ-DC-EmM"/>
+                            <constraint firstItem="9Ay-au-UXw" firstAttribute="bottom" secondItem="mLn-EM-dsH" secondAttribute="bottom" type="default" id="MvE-RY-kmq"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pvs-Po-NkV"/>
-                            <constraint firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="RD5-jT-5WT"/>
-                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="top" secondItem="edn-cW-SfT" secondAttribute="top" type="default" id="b2O-TD-KD6"/>
+                            <constraint firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" constant="48" id="YRE-dd-686"/>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" type="default" id="ZiB-oy-oC6"/>
+                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="top" secondItem="edn-cW-SfT" secondAttribute="top" type="default" id="c0c-Da-1nI"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" type="default" id="eZe-Ah-EQH"/>
+                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" type="default" id="fwQ-G2-cz9"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="17" id="hQz-bv-Z9B"/>
-                            <constraint firstAttribute="bottom" secondItem="3Ge-H1-HhM" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="hkv-ON-Fuv"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="14" id="iJs-lF-vUA"/>
                             <constraint firstItem="9Ay-au-UXw" firstAttribute="leading" secondItem="mLn-EM-dsH" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="j0P-nL-7e7"/>
                             <constraint firstItem="edn-cW-SfT" firstAttribute="leading" secondItem="9Ay-au-UXw" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kwo-7U-VPO"/>
-                            <constraint firstItem="edn-cW-SfT" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="top" type="default" id="sBp-Rs-tBk"/>
+                            <constraint firstItem="9Ay-au-UXw" firstAttribute="top" secondItem="mLn-EM-dsH" secondAttribute="top" type="default" id="wev-J0-dqt"/>
                             <constraint firstAttribute="trailing" secondItem="vyf-II-Iv4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zrN-ZW-sGE"/>
                         </constraints>
                     </view>
@@ -462,14 +463,57 @@
         <image name="c.png" width="163" height="163"/>
         <image name="d.png" width="163" height="163"/>
         <image name="maru.png" width="324" height="321"/>
+        <image name="start_button.png" width="242" height="71"/>
     </resources>
+    <classes>
+        <class className="AnswerUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doHome:"/>
+                <relationship kind="action" name="doKaisetsu:"/>
+                <relationship kind="action" name="doMondai:"/>
+                <relationship kind="action" name="doNext:"/>
+                <relationship kind="action" name="doShare:"/>
+                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QuestionUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectA:"/>
+                <relationship kind="action" name="selectB:"/>
+                <relationship kind="action" name="selectC:"/>
+                <relationship kind="action" name="selectD:"/>
+                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="questionNoLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="QuizResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doHome:"/>
+                <relationship kind="action" name="niseShare:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0BY-Wx-Q1u"/>
         <segue reference="84k-yt-d5P"/>
+        <segue reference="Ngw-kI-z65"/>
     </inferredMetricsTieBreakers>
 </document>
