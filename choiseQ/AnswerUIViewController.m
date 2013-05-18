@@ -179,10 +179,44 @@
         case 0:
             // １番目のボタンが押されたときの処理を記述する
             //　つまり、Facebookに投稿する。の時
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) { //利用可能チェック
+        NSString *serviceType = SLServiceTypeFacebook;
+        SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
+        [composeCtl setInitialText:@"facebook投稿テストだよ"];
+        [composeCtl addImage:[UIImage imageNamed:@"ball.jpg"]];
+        
+        [composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
+            
+            if (result == SLComposeViewControllerResultDone) {
+                NSLog(@"投稿に成功しました。");//投稿成功時の処理
+            } else if (result == SLComposeViewControllerResultCancelled) {
+                NSLog(@"投稿をキャンセルしました.");
+            }
+        }];
+        
+        [self presentViewController:composeCtl animated:YES completion:nil];
+    }
             break;
         case 1:
             // ２番目のボタンが押されたときの処理を記述する
-            // つまり、Facebookに投稿する。の時
+            // つまり、twitterに投稿する。の時
+                if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) { //利用可能チェック
+        NSString *serviceType = SLServiceTypeTwitter;
+        SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
+        [composeCtl setInitialText:@"twitter投稿テストだよ"];
+        [composeCtl addImage:[UIImage imageNamed:@"ball.jpg"]];
+        
+        [composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
+            
+            if (result == SLComposeViewControllerResultDone) {
+                NSLog(@"投稿に成功しました。");//投稿成功時の処理
+            } else if (result == SLComposeViewControllerResultCancelled) {
+                NSLog(@"投稿をキャンセルしました.");
+            }
+        }];
+            
+        [self presentViewController:composeCtl animated:YES completion:nil];
+    }
             break;
         case 2:
             // ３番目のボタンが押されたときの処理を記述する
