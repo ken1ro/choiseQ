@@ -465,48 +465,6 @@
         <image name="maru.png" width="324" height="321"/>
         <image name="start_button.png" width="242" height="71"/>
     </resources>
-    <classes>
-        <class className="AnswerUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="doKaisetsu:"/>
-                <relationship kind="action" name="doMondai:"/>
-                <relationship kind="action" name="doNext:"/>
-                <relationship kind="action" name="doShare:"/>
-                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="QuestionUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="selectA:"/>
-                <relationship kind="action" name="selectB:"/>
-                <relationship kind="action" name="selectC:"/>
-                <relationship kind="action" name="selectD:"/>
-                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionNoLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="QuizResultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="niseShare:"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
