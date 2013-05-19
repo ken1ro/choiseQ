@@ -31,9 +31,12 @@
                                             <segue destination="xlA-hw-je6" kind="modal" modalTransitionStyle="flipHorizontal" id="Ngw-kI-z65"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-mh-alG">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xx-mh-alG">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="qzZ-hG-IxQ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Button" image="others_button.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -41,9 +44,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-BP-0oZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-BP-0oZ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ITs-8Z-P6S"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="設定">
+                                        <state key="normal" title="設定" image="setting_button.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -463,8 +469,52 @@
         <image name="c.png" width="163" height="163"/>
         <image name="d.png" width="163" height="163"/>
         <image name="maru.png" width="324" height="321"/>
+        <image name="others_button.png" width="242" height="71"/>
+        <image name="setting_button.png" width="242" height="71"/>
         <image name="start_button.png" width="242" height="71"/>
     </resources>
+    <classes>
+        <class className="AnswerUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doHome:"/>
+                <relationship kind="action" name="doKaisetsu:"/>
+                <relationship kind="action" name="doMondai:"/>
+                <relationship kind="action" name="doNext:"/>
+                <relationship kind="action" name="doShare:"/>
+                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QuestionUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectA:"/>
+                <relationship kind="action" name="selectB:"/>
+                <relationship kind="action" name="selectC:"/>
+                <relationship kind="action" name="selectD:"/>
+                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="questionNoLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="QuizResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doHome:"/>
+                <relationship kind="action" name="niseShare:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
