@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    //後で消す
+    //debug
+    NSLog(@"QuizResultsUIViewController viewDidLoad");
+
 }
 
 - (void)didReceiveMemoryWarning

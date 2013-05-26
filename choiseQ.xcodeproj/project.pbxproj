@@ -12,6 +12,7 @@
 		BE7D20DA174916F3001956A0 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D7174916F3001956A0 /* setting_button.png */; };
 		BE7D20DB174916F3001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D8174916F3001956A0 /* start_button.png */; };
 		BE7D20DF17492525001956A0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7D20DE17492525001956A0 /* Social.framework */; };
+		BE7D20E11751F4A6001956A0 /* percent.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20E01751F4A6001956A0 /* percent.png */; };
 		BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE4173794FA00495938 /* UIKit.framework */; };
 		BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8BE9173794FA00495938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE8173794FA00495938 /* CoreGraphics.framework */; };
@@ -62,6 +63,7 @@
 		BE7D20D8174916F3001956A0 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = img/start_button.png; sourceTree = "<group>"; };
 		BE7D20DC17491932001956A0 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		BE7D20DE17492525001956A0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BE7D20E01751F4A6001956A0 /* percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = percent.png; path = img/percent.png; sourceTree = "<group>"; };
 		BE9E8BE1173794FA00495938 /* choiseQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = choiseQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9E8BE4173794FA00495938 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE9E8BE6173794FA00495938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -215,6 +217,7 @@
 		BEA3223E173FAD1200C08BCD /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BE7D20E01751F4A6001956A0 /* percent.png */,
 				BEA32253173FCA3900C08BCD /* a.png */,
 				BEA32254173FCA3900C08BCD /* b.png */,
 				BEA32255173FCA3900C08BCD /* c.png */,
@@ -325,6 +328,7 @@
 				BE7D20D9174916F3001956A0 /* others_button.png in Resources */,
 				BE7D20DA174916F3001956A0 /* setting_button.png in Resources */,
 				BE7D20DB174916F3001956A0 /* start_button.png in Resources */,
+				BE7D20E11751F4A6001956A0 /* percent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

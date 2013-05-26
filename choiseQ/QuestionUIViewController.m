@@ -26,6 +26,10 @@
 }
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
+    //後で消す
+    //debug
+    NSLog(@"QuestionUIViewController viewWillAppear");
+
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     //出題数をカウント
     appDelegate.qCount ++;
@@ -84,8 +88,6 @@
     self.selectedAnswerBtn = _selectedAnswerBtn;
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     appDelegate.dSelectedAnswer = self.selectedAnswerBtn;
-    NSLog(@"%@",self.selectedAnswerBtn);
-    NSLog(@"%@",appDelegate.dSelectedAnswer);
     [self performSegueWithIdentifier:@"toAnswerView" sender:self];
 
     
@@ -96,7 +98,6 @@
  画面遷移時に呼ばれる
 *///////////////////////////////////////////////////////////
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"txxx");
     //後で消して。
     /*画面遷移時に条件つけて別画面に遷移する場合に使う用
     if ([[segue identifier] isEqualToString:@"segJunle"]){

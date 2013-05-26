@@ -28,6 +28,10 @@
 }
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
+    //後で消す
+    //debug
+    NSLog(@"AnswerUIViewController viewWillAppear");
+    
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     NSString *yourAnswer = appDelegate.dSelectedAnswer;
     //前画面で選んだ選択肢を表示

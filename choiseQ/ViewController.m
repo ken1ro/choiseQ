@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //後で消す
+    //debug
+    NSLog(@"ViewController viewDidLoad");
+
 }
 
 - (void)didReceiveMemoryWarning
