@@ -189,18 +189,18 @@
         [composeCtl setInitialText:@"facebook投稿テストだよ"];
         [composeCtl addImage:[UIImage imageNamed:@"ball.jpg"]];
         
-        [composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
+        //[composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
             
-            if (result == SLComposeViewControllerResultDone) {
-                NSLog(@"投稿に成功しました。");//投稿成功時の処理
-            } else if (result == SLComposeViewControllerResultCancelled) {
-                NSLog(@"投稿をキャンセルしました.");
-            }
-        }];
+            //if (result == SLComposeViewControllerResultDone) {
+            //    NSLog(@"投稿に成功しました。");//投稿成功時の処理
+            //} else if (result == SLComposeViewControllerResultCancelled) {
+            //    NSLog(@"投稿をキャンセルしました.");
+            //}
+        //}];
         
         [self presentViewController:composeCtl animated:YES completion:nil];
     }
-            break;
+            //break;
         case 1:
             // ２番目のボタンが押されたときの処理を記述する
             // つまり、twitterに投稿する。の時
@@ -210,18 +210,18 @@
         [composeCtl setInitialText:@"twitter投稿テストだよ"];
         [composeCtl addImage:[UIImage imageNamed:@"ball.jpg"]];
         
-        [composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
+        //[composeCtl setCompletionHandler:^(SLComposeViewControllerResult result) {
             
-            if (result == SLComposeViewControllerResultDone) {
-                NSLog(@"投稿に成功しました。");//投稿成功時の処理
-            } else if (result == SLComposeViewControllerResultCancelled) {
-                NSLog(@"投稿をキャンセルしました.");
-            }
-        }];
+            //if (result == SLComposeViewControllerResultDone) {
+            //    NSLog(@"投稿に成功しました。");//投稿成功時の処理
+            //} else if (result == SLComposeViewControllerResultCancelled) {
+            //    NSLog(@"投稿をキャンセルしました.");
+            //}
+        //}];
             
         [self presentViewController:composeCtl animated:YES completion:nil];
     }
-            break;
+            //break;
         case 2:
             // ３番目のボタンが押されたときの処理を記述する
             // つまり、、、追加する時。
