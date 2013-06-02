@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
 #import "AppDelegate.h"
+#import "iAd/iAd.h"
 
-@interface AnswerUIViewController : UIViewController<UIActionSheetDelegate>
+@interface AnswerUIViewController : UIViewController<UIActionSheetDelegate,ADBannerViewDelegate>{
+    ///// 広告用　/////
+    BOOL bannerIsVisible;
+    ///// ここまで広告用　/////
+
+    
+}
 @property (weak, nonatomic) IBOutlet UIButton *answerTab;
 @property (weak, nonatomic) IBOutlet UIButton *questionTab;
 @property (weak, nonatomic) IBOutlet UIImageView *tofImg;
@@ -18,6 +25,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *yourAnswerLbl;
 @property (nonatomic, assign) int tabSwitch;
 @property (weak, nonatomic) IBOutlet UITextView *answerTextView;
+///// 広告用　/////
+@property (nonatomic, assign) BOOL bannerIsVisible;
+@property (weak, nonatomic) ADBannerView *adView;
+///// ここまで広告用　/////
+
+///// 広告用　/////
+- (void)viewIAdBox:(ADBannerView *)_adView;
+///// ここまで広告用　/////
+
 
 - (int) judgeTOF:(NSString *)_yourAnser;
 - (IBAction)doKaisetsu:(id)sender;

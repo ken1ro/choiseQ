@@ -43,6 +43,7 @@
 		BEA32258173FCA3900C08BCD /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA32254173FCA3900C08BCD /* b.png */; };
 		BEA32259173FCA3900C08BCD /* c.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA32255173FCA3900C08BCD /* c.png */; };
 		BEA3225A173FCA3900C08BCD /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA32256173FCA3900C08BCD /* d.png */; };
+		BEE37E99175B5EDB00ADD89F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE37E98175B5EDB00ADD89F /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		BEA32254173FCA3900C08BCD /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b.png; path = img/b.png; sourceTree = "<group>"; };
 		BEA32255173FCA3900C08BCD /* c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = c.png; path = img/c.png; sourceTree = "<group>"; };
 		BEA32256173FCA3900C08BCD /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = d.png; path = img/d.png; sourceTree = "<group>"; };
+		BEE37E98175B5EDB00ADD89F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE37E99175B5EDB00ADD89F /* iAd.framework in Frameworks */,
 				BE7D20DF17492525001956A0 /* Social.framework in Frameworks */,
 				BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */,
 				BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */,
@@ -132,6 +135,7 @@
 		BE9E8BD8173794FA00495938 = {
 			isa = PBXGroup;
 			children = (
+				BEE37E98175B5EDB00ADD89F /* iAd.framework */,
 				BE7D20DE17492525001956A0 /* Social.framework */,
 				BE7D20DC17491932001956A0 /* Twitter.framework */,
 				BE9E8BEA173794FA00495938 /* choiseQ */,
