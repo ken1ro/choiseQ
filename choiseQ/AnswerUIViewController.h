@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *tofWordImg;
 @property (weak, nonatomic) IBOutlet UILabel *yourAnswerLbl;
 @property (nonatomic, assign) int tabSwitch;
+@property (weak, nonatomic) IBOutlet UIScrollView *answerScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *answerImg;
 @property (weak, nonatomic) IBOutlet UITextView *answerTextView;
 ///// 広告用　/////
 @property (nonatomic, assign) BOOL bannerIsVisible;

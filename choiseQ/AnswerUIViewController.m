@@ -292,7 +292,7 @@
     // 広告が表示されていない場合は表示する
     if (!bannerIsVisible) {
         [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
-        banner.frame = CGRectOffset(CGRectZero, 0, self.view.frame.size.height-banner.frame.size.height-50);
+        banner.frame = CGRectOffset(CGRectZero, 0, self.view.frame.size.height-banner.frame.size.height-40);
         [UIView commitAnimations];
         bannerIsVisible = YES;
     }
