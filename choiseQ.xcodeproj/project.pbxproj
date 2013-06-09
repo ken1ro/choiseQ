@@ -12,6 +12,10 @@
 		BE0F0D62175E36CE007C22E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D61175E36CE007C22E7 /* Default@2x.png */; };
 		BE0F0D64175E36D3007C22E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D63175E36D3007C22E7 /* Default-568h@2x.png */; };
 		BE0F0D661764513D007C22E7 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D651764513D007C22E7 /* title.png */; };
+		BE3F543D17646F5F00E6F03E /* mondai_tab_off_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543917646F5F00E6F03E /* mondai_tab_off_2.png */; };
+		BE3F543E17646F5F00E6F03E /* kaisetsu_tab_off_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543A17646F5F00E6F03E /* kaisetsu_tab_off_2.png */; };
+		BE3F543F17646F5F00E6F03E /* kaisetsu_tab_on_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */; };
+		BE3F544017646F5F00E6F03E /* mondai_tab_on_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */; };
 		BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */; };
 		BE7D20D9174916F3001956A0 /* others_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D6174916F3001956A0 /* others_button.png */; };
 		BE7D20DA174916F3001956A0 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D7174916F3001956A0 /* setting_button.png */; };
@@ -67,6 +71,10 @@
 		BE0F0D61175E36CE007C22E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BE0F0D63175E36D3007C22E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BE0F0D651764513D007C22E7 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = ../../picture_by_arcan/title.png; sourceTree = "<group>"; };
+		BE3F543917646F5F00E6F03E /* mondai_tab_off_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mondai_tab_off_2.png; sourceTree = "<group>"; };
+		BE3F543A17646F5F00E6F03E /* kaisetsu_tab_off_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaisetsu_tab_off_2.png; sourceTree = "<group>"; };
+		BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaisetsu_tab_on_2.png; sourceTree = "<group>"; };
+		BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mondai_tab_on_2.png; sourceTree = "<group>"; };
 		BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizResultsViewController.h; sourceTree = "<group>"; };
 		BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizResultsViewController.m; sourceTree = "<group>"; };
 		BE7D20D6174916F3001956A0 /* others_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others_button.png; path = img/others_button.png; sourceTree = "<group>"; };
@@ -236,6 +244,10 @@
 			children = (
 				BE0F0D651764513D007C22E7 /* title.png */,
 				BE0F0D5D175E3556007C22E7 /* 36096583_m.jpg */,
+				BE3F543917646F5F00E6F03E /* mondai_tab_off_2.png */,
+				BE3F543A17646F5F00E6F03E /* kaisetsu_tab_off_2.png */,
+				BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */,
+				BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */,
 				BE7D20E01751F4A6001956A0 /* percent.png */,
 				BEA32253173FCA3900C08BCD /* a.png */,
 				BEA32254173FCA3900C08BCD /* b.png */,
@@ -353,6 +365,10 @@
 				BE0F0D62175E36CE007C22E7 /* Default@2x.png in Resources */,
 				BE0F0D64175E36D3007C22E7 /* Default-568h@2x.png in Resources */,
 				BE0F0D661764513D007C22E7 /* title.png in Resources */,
+				BE3F543D17646F5F00E6F03E /* mondai_tab_off_2.png in Resources */,
+				BE3F543E17646F5F00E6F03E /* kaisetsu_tab_off_2.png in Resources */,
+				BE3F543F17646F5F00E6F03E /* kaisetsu_tab_on_2.png in Resources */,
+				BE3F544017646F5F00E6F03E /* mondai_tab_on_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

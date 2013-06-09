@@ -250,15 +250,15 @@
  *///////////////////////////////////////////////////////////
 - (void) selectTabSwitch{
     if (self.tabSwitch == 1){
-        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on.gif"] forState:UIControlStateNormal];
-        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"monndai_tab_off.gif"] forState:UIControlStateNormal];
+        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on_2.png"] forState:UIControlStateNormal];
+        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_off_2.png"] forState:UIControlStateNormal];
         
         //ここで表示する文章を変える。
         self.answerTextView.text =@"解説をここに表示する。";
         
     }else{
-        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off.gif"] forState:UIControlStateNormal];
-        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"monndai_tab_on.gif"] forState:UIControlStateNormal];
+        [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off_2.png"] forState:UIControlStateNormal];
+        [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_on_2.png"] forState:UIControlStateNormal];
         
         //ここで表示する文章を変える。
         self.answerTextView.text =@"問題をここに表示する。";
