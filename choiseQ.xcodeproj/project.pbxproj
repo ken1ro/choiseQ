@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0E686B1768C391006BEF14 /* blue_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E68681768C391006BEF14 /* blue_table.png */; };
+		BE0E686C1768C391006BEF14 /* green_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E68691768C391006BEF14 /* green_table.png */; };
+		BE0E686E1768C5B1006BEF14 /* yellow_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E686D1768C5B1006BEF14 /* yellow_table.png */; };
+		BE0E68741768C8B9006BEF14 /* OthersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E68731768C8B9006BEF14 /* OthersTableViewController.m */; };
 		BE0F0D5E175E3556007C22E7 /* 36096583_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D5D175E3556007C22E7 /* 36096583_m.jpg */; };
 		BE0F0D60175E36C7007C22E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D5F175E36C7007C22E7 /* Default.png */; };
 		BE0F0D62175E36CE007C22E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F0D61175E36CE007C22E7 /* Default@2x.png */; };
@@ -66,6 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE0E68681768C391006BEF14 /* blue_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_table.png; sourceTree = "<group>"; };
+		BE0E68691768C391006BEF14 /* green_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_table.png; sourceTree = "<group>"; };
+		BE0E686D1768C5B1006BEF14 /* yellow_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow_table.png; path = img/yellow_table.png; sourceTree = "<group>"; };
+		BE0E68721768C8B9006BEF14 /* OthersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OthersTableViewController.h; path = ../OthersTableViewController.h; sourceTree = "<group>"; };
+		BE0E68731768C8B9006BEF14 /* OthersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OthersTableViewController.m; path = ../OthersTableViewController.m; sourceTree = "<group>"; };
 		BE0F0D5D175E3556007C22E7 /* 36096583_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 36096583_m.jpg; sourceTree = "<group>"; };
 		BE0F0D5F175E36C7007C22E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BE0F0D61175E36CE007C22E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -192,6 +201,8 @@
 				BEA3223E173FAD1200C08BCD /* img */,
 				BE9E8BF3173794FA00495938 /* AppDelegate.h */,
 				BE9E8BF4173794FA00495938 /* AppDelegate.m */,
+				BE0E68721768C8B9006BEF14 /* OthersTableViewController.h */,
+				BE0E68731768C8B9006BEF14 /* OthersTableViewController.m */,
 				BE9E8BFC173794FA00495938 /* MainStoryboard.storyboard */,
 				BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */,
 				BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */,
@@ -242,6 +253,9 @@
 		BEA3223E173FAD1200C08BCD /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BE0E68681768C391006BEF14 /* blue_table.png */,
+				BE0E68691768C391006BEF14 /* green_table.png */,
+				BE0E686D1768C5B1006BEF14 /* yellow_table.png */,
 				BE0F0D651764513D007C22E7 /* title.png */,
 				BE0F0D5D175E3556007C22E7 /* 36096583_m.jpg */,
 				BE3F543917646F5F00E6F03E /* mondai_tab_off_2.png */,
@@ -369,6 +383,9 @@
 				BE3F543E17646F5F00E6F03E /* kaisetsu_tab_off_2.png in Resources */,
 				BE3F543F17646F5F00E6F03E /* kaisetsu_tab_on_2.png in Resources */,
 				BE3F544017646F5F00E6F03E /* mondai_tab_on_2.png in Resources */,
+				BE0E686B1768C391006BEF14 /* blue_table.png in Resources */,
+				BE0E686C1768C391006BEF14 /* green_table.png in Resources */,
+				BE0E686E1768C5B1006BEF14 /* yellow_table.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +426,7 @@
 				BE9E8C4E1737B91400495938 /* QuestionUIViewController.m in Sources */,
 				BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */,
 				BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */,
+				BE0E68741768C8B9006BEF14 /* OthersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
