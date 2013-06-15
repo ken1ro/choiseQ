@@ -7,6 +7,7 @@
 //
 
 #import "AnswerUIViewController.h"
+#import "DataModel.h"
 
 @interface AnswerUIViewController ()
 
@@ -33,12 +34,13 @@
     NSLog(@"AnswerUIViewController viewWillAppear");
     
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    NSString *yourAnswer = appDelegate.dSelectedAnswer;
-    //前画面で選んだ選択肢を表示
-    self.yourAnswerLbl.text = yourAnswer;
-    //正解か不正解かを判定する。
     
-    if ([self judgeTOF:yourAnswer]) {
+    //前画面で選んだ選択肢を表示
+    NSString *yourAnswer = appDelegate.dSelectedAnswer;
+    self.yourAnswerLbl.text = yourAnswer;
+    
+    //正解か不正解かを判定する。
+    if ([yourAnswer isEqualToString:[DataModel getAnswer:[NSNumber numberWithInteger:appDelegate.qCount]]]) {
         //正解なら○と正解を表示
         tofImg.image = [UIImage imageNamed:@"maru.png"];
         tofWordImg.image = [UIImage imageNamed:@"True.png"];
@@ -87,28 +89,6 @@
     [self setYourAnswerLbl:nil];
     [self setAnswerTextView:nil];
     [super viewDidUnload];
-}
-
-/*//////////////////////////////////////////////////////////
- 正解か不正解かを判定する。
- 引数：ユーザの選択肢
- 返値：正解なら１、不正解なら０
- *///////////////////////////////////////////////////////////
-- (int) judgeTOF:(NSString *)_yourAnser{
-    int judged = 0;
-    NSString *correctAnswer = @"a";
-    
-    //DBから正解を持ってくる
-    //correctAnswer = ???
-    
-    //判定
-    if ([_yourAnser isEqualToString:correctAnswer]){
-        judged = 1;
-    }else{
-        judged = 0;
-    }
-    
-    return judged;
 }
 
 /*//////////////////////////////////////////////////////////
@@ -163,7 +143,7 @@
 - (IBAction)doNext:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     int questionCount = appDelegate.qCount;
-    int questionCountLimit = 5;
+    int questionCountLimit = [DataModel getQuestionCount];
 
     if(questionCount < questionCountLimit){
         //解答問題数（questionCount）が指定問題数（questionCountLimit)より小さければ
@@ -249,19 +229,31 @@
  -２なら問題を表示。
  *///////////////////////////////////////////////////////////
 - (void) selectTabSwitch{
+    
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    
     if (self.tabSwitch == 1){
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_off_2.png"] forState:UIControlStateNormal];
         
         //ここで表示する文章を変える。
-        self.answerTextView.text =@"解説をここに表示する。";
+        NSString *description = [DataModel getDescription:[NSNumber numberWithInteger:appDelegate.qCount]];
+
+        self.answerTextView.text = description;
         
     }else{
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_on_2.png"] forState:UIControlStateNormal];
-        
+
+        // 表示用の問題を取得
+        NSString *question    = [DataModel getQuestion:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseA     = [DataModel getChoiseA:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseB     = [DataModel getChoiseB:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseC     = [DataModel getChoiseC:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseD     = [DataModel getChoiseD:[NSNumber numberWithInteger:appDelegate.qCount]];
+
         //ここで表示する文章を変える。
-        self.answerTextView.text =@"問題をここに表示する。";
+        self.answerTextView.text =[NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
         
     }
 }

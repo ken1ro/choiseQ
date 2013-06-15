@@ -7,6 +7,7 @@
 //
 
 #import "QuestionUIViewController.h"
+#import "DataModel.h"
 
 @interface QuestionUIViewController ()
 
@@ -35,10 +36,20 @@
     NSLog(@"QuestionUIViewController viewWillAppear");
 
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+ 
     //出題数をカウント
     appDelegate.qCount ++;
-    self.questionNoLbl.text = [NSString stringWithFormat:@"第 %d 問", appDelegate.qCount];
     
+    //DBから問題文、選択肢の取得
+    NSString *question = [DataModel getQuestion:[NSNumber numberWithInteger:appDelegate.qCount]];
+    NSString *choiseA  = [DataModel getChoiseA:[NSNumber numberWithInteger:appDelegate.qCount]];
+    NSString *choiseB  = [DataModel getChoiseB:[NSNumber numberWithInteger:appDelegate.qCount]];
+    NSString *choiseC  = [DataModel getChoiseC:[NSNumber numberWithInteger:appDelegate.qCount]];
+    NSString *choiseD  = [DataModel getChoiseD:[NSNumber numberWithInteger:appDelegate.qCount]];
+
+    self.questionNoLbl.text = [NSString stringWithFormat:@"第 %d 問", appDelegate.qCount];
+    self.QuestionTextView.text = [NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
+
 
 }
 
