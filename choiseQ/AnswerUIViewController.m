@@ -34,12 +34,13 @@
     NSLog(@"AnswerUIViewController viewWillAppear");
     
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    NSString *yourAnswer = appDelegate.dSelectedAnswer;
-    //前画面で選んだ選択肢を表示
-    self.yourAnswerLbl.text = yourAnswer;
-    //正解か不正解かを判定する。
     
-    if ([self judgeTOF:yourAnswer]) {
+    //前画面で選んだ選択肢を表示
+    NSString *yourAnswer = appDelegate.dSelectedAnswer;
+    self.yourAnswerLbl.text = yourAnswer;
+    
+    //正解か不正解かを判定する。
+    if ([yourAnswer isEqualToString:[DataModel getAnswer:[NSNumber numberWithInteger:appDelegate.qCount]]]) {
         //正解なら○と正解を表示
         tofImg.image = [UIImage imageNamed:@"maru.png"];
         tofWordImg.image = [UIImage imageNamed:@"True.png"];
@@ -88,28 +89,6 @@
     [self setYourAnswerLbl:nil];
     [self setAnswerTextView:nil];
     [super viewDidUnload];
-}
-
-/*//////////////////////////////////////////////////////////
- 正解か不正解かを判定する。
- 引数：ユーザの選択肢
- 返値：正解なら１、不正解なら０
- *///////////////////////////////////////////////////////////
-- (int) judgeTOF:(NSString *)_yourAnser{
-    int judged = 0;
-    NSString *correctAnswer = @"a";
-    
-    //DBから正解を持ってくる
-    //correctAnswer = ???
-    
-    //判定
-    if ([_yourAnser isEqualToString:correctAnswer]){
-        judged = 1;
-    }else{
-        judged = 0;
-    }
-    
-    return judged;
 }
 
 /*//////////////////////////////////////////////////////////
