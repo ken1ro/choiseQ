@@ -7,6 +7,7 @@
 //
 
 #import "AnswerUIViewController.h"
+#import "DataModel.h"
 
 @interface AnswerUIViewController ()
 
@@ -163,7 +164,7 @@
 - (IBAction)doNext:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     int questionCount = appDelegate.qCount;
-    int questionCountLimit = 5;
+    int questionCountLimit = [DataModel getQuestionCount];
 
     if(questionCount < questionCountLimit){
         //解答問題数（questionCount）が指定問題数（questionCountLimit)より小さければ
