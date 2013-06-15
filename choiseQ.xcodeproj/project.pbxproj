@@ -26,6 +26,7 @@
 		BE7D20DB174916F3001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D8174916F3001956A0 /* start_button.png */; };
 		BE7D20DF17492525001956A0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7D20DE17492525001956A0 /* Social.framework */; };
 		BE7D20E11751F4A6001956A0 /* percent.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20E01751F4A6001956A0 /* percent.png */; };
+		BE9D6542176C67D0003E1298 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9D6541176C67D0003E1298 /* CustomSegue.m */; };
 		BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE4173794FA00495938 /* UIKit.framework */; };
 		BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8BE9173794FA00495938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE8173794FA00495938 /* CoreGraphics.framework */; };
@@ -92,6 +93,8 @@
 		BE7D20DC17491932001956A0 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		BE7D20DE17492525001956A0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BE7D20E01751F4A6001956A0 /* percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = percent.png; path = img/percent.png; sourceTree = "<group>"; };
+		BE9D6540176C67D0003E1298 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		BE9D6541176C67D0003E1298 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
 		BE9E8BE1173794FA00495938 /* choiseQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = choiseQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9E8BE4173794FA00495938 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE9E8BE6173794FA00495938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -204,6 +207,8 @@
 				BE0E68721768C8B9006BEF14 /* OthersTableViewController.h */,
 				BE0E68731768C8B9006BEF14 /* OthersTableViewController.m */,
 				BE9E8BFC173794FA00495938 /* MainStoryboard.storyboard */,
+				BE9D6540176C67D0003E1298 /* CustomSegue.h */,
+				BE9D6541176C67D0003E1298 /* CustomSegue.m */,
 				BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */,
 				BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */,
 				BE9E8C4F1737B98300495938 /* AnswerUIViewController.h */,
@@ -427,6 +432,7 @@
 				BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */,
 				BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */,
 				BE0E68741768C8B9006BEF14 /* OthersTableViewController.m in Sources */,
+				BE9D6542176C67D0003E1298 /* CustomSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
