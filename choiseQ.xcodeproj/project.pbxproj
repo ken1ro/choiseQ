@@ -27,13 +27,13 @@
 		BE3F543E17646F5F00E6F03E /* kaisetsu_tab_off_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543A17646F5F00E6F03E /* kaisetsu_tab_off_2.png */; };
 		BE3F543F17646F5F00E6F03E /* kaisetsu_tab_on_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */; };
 		BE3F544017646F5F00E6F03E /* mondai_tab_on_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */; };
+		BE5B5534176CBD3400EEC1BF /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = BE5B5533176CBD3400EEC1BF /* title.png */; };
 		BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */; };
 		BE7D20D9174916F3001956A0 /* others_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D6174916F3001956A0 /* others_button.png */; };
 		BE7D20DA174916F3001956A0 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D7174916F3001956A0 /* setting_button.png */; };
 		BE7D20DB174916F3001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D8174916F3001956A0 /* start_button.png */; };
 		BE7D20DF17492525001956A0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7D20DE17492525001956A0 /* Social.framework */; };
 		BE7D20E11751F4A6001956A0 /* percent.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20E01751F4A6001956A0 /* percent.png */; };
-		BE9D6542176C67D0003E1298 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9D6541176C67D0003E1298 /* CustomSegue.m */; };
 		BE9E8BE5173794FA00495938 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE4173794FA00495938 /* UIKit.framework */; };
 		BE9E8BE7173794FA00495938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE6173794FA00495938 /* Foundation.framework */; };
 		BE9E8BE9173794FA00495938 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9E8BE8173794FA00495938 /* CoreGraphics.framework */; };
@@ -105,6 +105,7 @@
 		BE3F543A17646F5F00E6F03E /* kaisetsu_tab_off_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaisetsu_tab_off_2.png; sourceTree = "<group>"; };
 		BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaisetsu_tab_on_2.png; sourceTree = "<group>"; };
 		BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mondai_tab_on_2.png; sourceTree = "<group>"; };
+		BE5B5533176CBD3400EEC1BF /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		BE5E8F4F173A7C2200DF869D /* QuizResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizResultsViewController.h; sourceTree = "<group>"; };
 		BE5E8F50173A7C2200DF869D /* QuizResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizResultsViewController.m; sourceTree = "<group>"; };
 		BE7D20D6174916F3001956A0 /* others_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others_button.png; path = img/others_button.png; sourceTree = "<group>"; };
@@ -310,6 +311,7 @@
 				BE3F543B17646F5F00E6F03E /* kaisetsu_tab_on_2.png */,
 				BE3F543C17646F5F00E6F03E /* mondai_tab_on_2.png */,
 				BE7D20E01751F4A6001956A0 /* percent.png */,
+				BE5B5533176CBD3400EEC1BF /* title.png */,
 				BEA32253173FCA3900C08BCD /* a.png */,
 				BEA32254173FCA3900C08BCD /* b.png */,
 				BEA32255173FCA3900C08BCD /* c.png */,
@@ -433,6 +435,7 @@
 				BE0E686C1768C391006BEF14 /* green_table.png in Resources */,
 				BE0E686E1768C5B1006BEF14 /* yellow_table.png in Resources */,
 				30122B01176C9F9900C89675 /* choiseQ.sqlite in Resources */,
+				BE5B5534176CBD3400EEC1BF /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +477,12 @@
 				BE9E8C511737B98300495938 /* AnswerUIViewController.m in Sources */,
 				BE5E8F51173A7C2200DF869D /* QuizResultsViewController.m in Sources */,
 				BE0E68741768C8B9006BEF14 /* OthersTableViewController.m in Sources */,
-				BE9D6542176C67D0003E1298 /* CustomSegue.m in Sources */,
+				3079F34F176C7BAA001E0932 /* FMDatabase.m in Sources */,
+				3079F350176C7BAA001E0932 /* FMDatabaseAdditions.m in Sources */,
+				3079F351176C7BAA001E0932 /* FMDatabasePool.m in Sources */,
+				3079F352176C7BAA001E0932 /* FMDatabaseQueue.m in Sources */,
+				3079F353176C7BAA001E0932 /* FMResultSet.m in Sources */,
+				3079F356176C7BCB001E0932 /* DataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

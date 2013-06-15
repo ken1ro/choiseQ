@@ -27,6 +27,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *answerScrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *answerImg;
 @property (weak, nonatomic) IBOutlet UITextView *answerTextView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
 ///// 広告用　/////
 @property (nonatomic, assign) BOOL bannerIsVisible;
 @property (weak, nonatomic) ADBannerView *adView;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -416,36 +416,37 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="centerX" secondItem="5cY-Cc-i7D" secondAttribute="centerX" type="default" id="3dx-Ij-Ytn"/>
-                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="5" id="ONG-UL-IZy"/>
-                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="trailing" secondItem="UR6-QS-r0Z" secondAttribute="trailing" type="default" id="WMC-bf-wwy"/>
-                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="centerX" secondItem="UR6-QS-r0Z" secondAttribute="centerX" type="default" id="Xur-T6-V6w"/>
-                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="168" id="Z2n-Ou-jr2"/>
-                                    <constraint firstAttribute="bottom" secondItem="5cY-Cc-i7D" secondAttribute="bottom" constant="153" id="edM-SX-4R9"/>
-                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="leading" secondItem="UR6-QS-r0Z" secondAttribute="leading" type="default" id="xYk-9l-ZBu"/>
+                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="centerX" secondItem="jDK-R2-F7z" secondAttribute="centerX" type="default" id="8VA-IF-bBJ"/>
+                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="centerX" secondItem="UR6-QS-r0Z" secondAttribute="centerX" type="default" id="ALg-we-SUF"/>
+                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="leading" secondItem="UR6-QS-r0Z" secondAttribute="leading" type="default" id="GR3-fI-z4Y"/>
+                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="168" id="Igk-XL-Juc"/>
+                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="trailing" secondItem="UR6-QS-r0Z" secondAttribute="trailing" type="default" id="LGI-4b-eBh"/>
+                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="6" id="RnV-AE-Wsn"/>
+                                    <constraint firstAttribute="bottom" secondItem="5cY-Cc-i7D" secondAttribute="bottom" constant="211" id="cJM-oO-ai3"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="39" id="1Uz-4v-tdN"/>
+                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="1Xi-vV-8Da"/>
                             <constraint firstItem="TGA-KF-2HK" firstAttribute="bottom" secondItem="8wa-gu-Kmf" secondAttribute="bottom" type="default" id="3RG-Me-TaD"/>
-                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="127" id="6e9-JI-vVu"/>
+                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="3zn-CV-RNJ"/>
+                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="127" id="45L-UK-eYY"/>
                             <constraint firstItem="Pdr-XI-3wm" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="7tm-Ux-tLy"/>
                             <constraint firstItem="rzm-vz-Vkk" firstAttribute="baseline" secondItem="TcV-ir-9gI" secondAttribute="baseline" type="default" id="Kuj-Yv-0Hd"/>
                             <constraint firstItem="OZ8-nA-h49" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="La3-OX-2gl"/>
                             <constraint firstItem="ts0-xK-GGJ" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="Lv1-sS-EJd"/>
-                            <constraint firstItem="OZ8-nA-h49" firstAttribute="bottom" secondItem="293-iW-yym" secondAttribute="bottom" type="default" id="MMB-Ua-DuO"/>
                             <constraint firstAttribute="trailing" secondItem="rzm-vz-Vkk" secondAttribute="trailing" constant="32" id="MnJ-Xx-LYv"/>
                             <constraint firstItem="293-iW-yym" firstAttribute="top" secondItem="6dy-ue-xuN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Nni-6B-Jl4"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="37" id="Riz-sL-nGn"/>
                             <constraint firstItem="ts0-xK-GGJ" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" constant="3" id="T5x-Ya-Rj5"/>
                             <constraint firstItem="GRw-TN-Ahf" firstAttribute="top" secondItem="mwl-BU-ycp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="V6Y-dS-Qog"/>
                             <constraint firstItem="mwl-BU-ycp" firstAttribute="leading" secondItem="6dy-ue-xuN" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="V9d-wR-FDk"/>
-                            <constraint firstAttribute="bottom" secondItem="UR6-QS-r0Z" secondAttribute="bottom" constant="103" id="VcI-am-pFc"/>
                             <constraint firstItem="TGA-KF-2HK" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="X0d-Rq-oKQ"/>
                             <constraint firstItem="GRw-TN-Ahf" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="aAg-OA-0fi"/>
                             <constraint firstItem="TGA-KF-2HK" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="aza-Lu-kLX"/>
+                            <constraint firstItem="TGA-KF-2HK" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="bottom" type="default" id="b17-zE-VXG"/>
                             <constraint firstItem="293-iW-yym" firstAttribute="top" secondItem="mwl-BU-ycp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cSo-U0-Nyb"/>
                             <constraint firstItem="GRw-TN-Ahf" firstAttribute="bottom" secondItem="293-iW-yym" secondAttribute="bottom" type="default" id="ch1-f5-HYC"/>
                             <constraint firstItem="6dy-ue-xuN" firstAttribute="top" secondItem="mwl-BU-ycp" secondAttribute="top" type="default" id="dRM-OQ-XPu"/>
@@ -453,11 +454,10 @@
                             <constraint firstItem="ts0-xK-GGJ" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="fwb-Fi-s4e"/>
                             <constraint firstItem="TcV-ir-9gI" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" constant="8" id="nfh-LE-Yzq"/>
                             <constraint firstItem="Pdr-XI-3wm" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="p1d-ob-xqg"/>
-                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="trailing" secondItem="8wa-gu-Kmf" secondAttribute="trailing" type="default" id="qUM-zf-bGp"/>
                             <constraint firstItem="293-iW-yym" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="qle-ij-lew"/>
                             <constraint firstItem="OZ8-nA-h49" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="rRY-fX-s0M"/>
                             <constraint firstItem="Pdr-XI-3wm" firstAttribute="top" secondItem="8wa-gu-Kmf" secondAttribute="top" type="default" id="sIr-f6-flZ"/>
-                            <constraint firstItem="UR6-QS-r0Z" firstAttribute="leading" secondItem="8wa-gu-Kmf" secondAttribute="leading" type="default" id="vfb-qM-JSm"/>
+                            <constraint firstItem="OZ8-nA-h49" firstAttribute="bottom" secondItem="GRw-TN-Ahf" secondAttribute="bottom" type="default" id="xk9-dN-nL5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -466,6 +466,7 @@
                         <outlet property="answerTab" destination="293-iW-yym" id="zYS-em-XCA"/>
                         <outlet property="answerTextView" destination="jDK-R2-F7z" id="ZnO-5V-sI3"/>
                         <outlet property="questionTab" destination="GRw-TN-Ahf" id="E0L-Vc-BYb"/>
+                        <outlet property="scrollView" destination="UR6-QS-r0Z" id="9cs-LF-8Nt"/>
                         <outlet property="tofImg" destination="6dy-ue-xuN" id="4GN-Z1-gn7"/>
                         <outlet property="tofWordImg" destination="mwl-BU-ycp" id="Tmk-WD-nBA"/>
                         <outlet property="yourAnswerLbl" destination="rzm-vz-Vkk" id="ojm-52-iDF"/>
@@ -490,7 +491,7 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" text="あなたのSEレベルは 　　XX級  もっとがんばりましょう〜" translatesAutoresizingMaskIntoConstraints="NO" id="A4n-8D-cHj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" text="あなたのSEレベルは 　　XX級  もっとがんばりましょう〜" translatesAutoresizingMaskIntoConstraints="NO" id="A4n-8D-cHj">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="235" id="I26-E3-KtD"/>
@@ -574,69 +575,13 @@
         <image name="start_button.png" width="242" height="71"/>
         <image name="title.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="AnswerUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="doKaisetsu:"/>
-                <relationship kind="action" name="doMondai:"/>
-                <relationship kind="action" name="doNext:"/>
-                <relationship kind="action" name="doShare:"/>
-                <relationship kind="outlet" name="answerImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="answerScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="QuestionUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="selectA:"/>
-                <relationship kind="action" name="selectB:"/>
-                <relationship kind="action" name="selectC:"/>
-                <relationship kind="action" name="selectD:"/>
-                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionNoLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="QuizResultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="niseShare:"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pce-hx-i3X"/>
-        <segue reference="Ngw-kI-z65"/>
+        <segue reference="84k-yt-d5P"/>
+        <segue reference="0BY-Wx-Q1u"/>
     </inferredMetricsTieBreakers>
 </document>

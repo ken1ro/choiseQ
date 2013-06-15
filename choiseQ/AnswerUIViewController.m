@@ -254,8 +254,25 @@
 
         //ここで表示する文章を変える。
         self.answerTextView.text =[NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
+
         
     }
+    
+    /*
+    //2013.06.15 ken追記
+    //このコメントは熊ちゃんが確認したら消して
+    //スクロールからはみ出るのでtextviewのサイズを調整
+    CGRect tmpframe = self.answerTextView.frame;
+    tmpframe.size.height = self.answerTextView.contentSize.height;
+    self.answerTextView.frame = tmpframe;
+    tmpframe = self.scrollView.frame;
+//    tmpframe.size.height = self.answerTextView.contentSize.height + self.answerImg.frame.size.height + 50;
+    tmpframe.size.height = 2000;
+    
+    self.scrollView.frame = tmpframe;
+    
+    NSLog(@"test height = %f", tmpframe.size.height);
+     */
 }
 
 
