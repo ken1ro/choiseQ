@@ -229,19 +229,31 @@
  -２なら問題を表示。
  *///////////////////////////////////////////////////////////
 - (void) selectTabSwitch{
+    
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    
     if (self.tabSwitch == 1){
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_off_2.png"] forState:UIControlStateNormal];
         
         //ここで表示する文章を変える。
-        self.answerTextView.text =@"解説をここに表示する。";
+        NSString *description = [DataModel getDescription:[NSNumber numberWithInteger:appDelegate.qCount]];
+
+        self.answerTextView.text = description;
         
     }else{
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_on_2.png"] forState:UIControlStateNormal];
-        
+
+        // 表示用の問題を取得
+        NSString *question    = [DataModel getQuestion:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseA     = [DataModel getChoiseA:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseB     = [DataModel getChoiseB:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseC     = [DataModel getChoiseC:[NSNumber numberWithInteger:appDelegate.qCount]];
+        NSString *choiseD     = [DataModel getChoiseD:[NSNumber numberWithInteger:appDelegate.qCount]];
+
         //ここで表示する文章を変える。
-        self.answerTextView.text =@"問題をここに表示する。";
+        self.answerTextView.text =[NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
         
     }
 }
