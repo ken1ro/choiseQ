@@ -14,6 +14,7 @@
 
 @implementation OthersViewController
 @synthesize _collectionView;
+@synthesize items;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,13 +29,15 @@
 - (void)loadView{
     [super loadView];
     //Othersに入れる要素数
-    _items = [NSMutableArray arrayWithCapacity:10];
+    items = [[OthersItemList alloc] init];
+/*    _items = [NSMutableArray arrayWithCapacity:10];
     for (int i = 0; i < 10; i++) {
         OthersItem *item = [[OthersItem alloc] init];
         item.number = i+1;
         item.caption = [NSString stringWithFormat:@"caption%d", item.number];
         [_items addObject:item];
     }
+ */
 }
 - (void)viewDidLoad
 {
@@ -59,8 +62,8 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-        NSLog(@"count");
-    return _items.count;
+        NSLog(@"count %d", items.count);
+    return items.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -68,9 +71,11 @@
     // セルオブジェクトを得る
     OthersCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"CellId" forIndexPath:indexPath];
     // 指定位置のSTCollectionItemオブジェクトを得る
-    OthersItem *item = [_items objectAtIndex:indexPath.row];
+    NSLog(@"cell number is : %d",indexPath.row);
+    OthersItem *item = [items.getOthersList objectAtIndex:indexPath.row];
     // セルオブジェクトのプロパティを設定する
     cell.captionLabel.text = item.caption;
+    cell.cellBackImg.image = [UIImage imageNamed:item.backImgString];
     
     return cell;
 }
@@ -78,7 +83,7 @@
 //Cell選択時
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    OthersItem *item = [_items objectAtIndex:indexPath.row];
+    OthersItem *item = [items.getOthersList objectAtIndex:indexPath.row];
     NSString *message = [NSString stringWithFormat:@"%d\n%@", item.number, item.caption];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil

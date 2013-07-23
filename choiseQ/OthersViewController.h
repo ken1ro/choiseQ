@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "OthersItem.h"
+#import "OthersItemList.h"
 #import "OthersCollectionViewCell.h"
 
 @interface OthersViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *_collectionView;
+@property (retain, nonatomic) OthersItemList *items;
 
 @end
+
 
 __strong NSMutableArray *_items;

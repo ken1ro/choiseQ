@@ -31,6 +31,7 @@
 		BE60836A179B9C6E00634005 /* OthersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE608369179B9C6E00634005 /* OthersItem.m */; };
 		BE60836D179B9D0800634005 /* OthersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE60836C179B9D0800634005 /* OthersCollectionViewCell.m */; };
 		BE608370179BA86900634005 /* OthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE60836F179BA86900634005 /* OthersViewController.m */; };
+		BE608373179CED9700634005 /* OthersItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE608372179CED9700634005 /* OthersItemList.m */; };
 		BE7D20D9174916F3001956A0 /* others_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D6174916F3001956A0 /* others_button.png */; };
 		BE7D20DA174916F3001956A0 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D7174916F3001956A0 /* setting_button.png */; };
 		BE7D20DB174916F3001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D8174916F3001956A0 /* start_button.png */; };
@@ -114,6 +115,8 @@
 		BE60836C179B9D0800634005 /* OthersCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersCollectionViewCell.m; sourceTree = "<group>"; };
 		BE60836E179BA86900634005 /* OthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersViewController.h; sourceTree = "<group>"; };
 		BE60836F179BA86900634005 /* OthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersViewController.m; sourceTree = "<group>"; };
+		BE608371179CED9700634005 /* OthersItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersItemList.h; sourceTree = "<group>"; };
+		BE608372179CED9700634005 /* OthersItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersItemList.m; sourceTree = "<group>"; };
 		BE7D20D6174916F3001956A0 /* others_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others_button.png; path = img/others_button.png; sourceTree = "<group>"; };
 		BE7D20D7174916F3001956A0 /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = img/setting_button.png; sourceTree = "<group>"; };
 		BE7D20D8174916F3001956A0 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = img/start_button.png; sourceTree = "<group>"; };
@@ -266,10 +269,12 @@
 				BE608366179B9BB300634005 /* OthersCollectionViewCell.xib */,
 				BE60836E179BA86900634005 /* OthersViewController.h */,
 				BE60836F179BA86900634005 /* OthersViewController.m */,
-				BE608368179B9C6E00634005 /* OthersItem.h */,
 				BE60836B179B9D0800634005 /* OthersCollectionViewCell.h */,
 				BE60836C179B9D0800634005 /* OthersCollectionViewCell.m */,
 				BE608369179B9C6E00634005 /* OthersItem.m */,
+				BE608368179B9C6E00634005 /* OthersItem.h */,
+				BE608371179CED9700634005 /* OthersItemList.h */,
+				BE608372179CED9700634005 /* OthersItemList.m */,
 			);
 			path = choiseQ;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				BE60836A179B9C6E00634005 /* OthersItem.m in Sources */,
 				BE60836D179B9D0800634005 /* OthersCollectionViewCell.m in Sources */,
 				BE608370179BA86900634005 /* OthersViewController.m in Sources */,
+				BE608373179CED9700634005 /* OthersItemList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
