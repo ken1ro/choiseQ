@@ -34,34 +34,46 @@
      * ここからOthersListの要素を直書きしていく
      *　要素数は上記initで指定しているため、その個数分要素を記入していく必要がある。
      ****************************************************************/
+    /*** 以下フォーマット **********************************************
+    item = [[OthersItem alloc] init];
+    item.number = 1;
+    item.title = @"作者のアプリ開発ブログ";
+    item.caption = @"アプリ作成者のアプリ開発ブログです。本アプリの開発や、アプリ開発のメモなど気ままなブログですのでお気軽にご確認ください。";
+    item.imgString = @"kok_logo_90x90.png";
+    item.backImgString = @"green_table.png";
+    item.url = @"http://ameblo.jp/kok-support/";
+    [OthersList addObject:item];
+     ***  ここまでフォーマット ******************************************/
     
     /*** １個目の要素 ***/
     OthersItem *item = [[OthersItem alloc] init];
     item.number = 1;
-    item.caption = [NSString stringWithFormat:@"caption%d", item.number];
-    item.img.image = [UIImage imageNamed:@"icon_kamera_190x190.png"];
-    item.backImg.image = [UIImage imageNamed:@"green_table.png"];
+    item.title = @"作者のアプリ開発ブログ";
+    item.caption = @"アプリ作成者のアプリ開発ブログです。本アプリの開発や、アプリ開発のメモなど気ままなブログですのでお気軽にご確認ください。";
+    item.imgString = @"kok_logo_90x90.png";
     item.backImgString = @"green_table.png";
+    item.url = @"http://ameblo.jp/kok-support/";
     
     [OthersList addObject:item];
     
     /*** 2個目の要素 ***/
     item = [[OthersItem alloc] init];
     item.number = 2;
+    item.title = @"作者のアプリ開発ブログ";
     item.caption = [NSString stringWithFormat:@"caption%d", item.number];
-    item.img.image = [UIImage imageNamed:@"yellow_table.png"];
-    item.backImg.image = [UIImage imageNamed:@"yellow_table.png"];
+    item.imgString = @"kok_logo_90x90.png";
     item.backImgString = @"yellow_table.png";
-    
+    item.url = @"http://ameblo.jp/kok-support/";
+    [OthersList addObject:item];
     
     /*** 3個目の要素 ***/
-    [OthersList addObject:item];
     item = [[OthersItem alloc] init];
     item.number = 3;
+    item.title = @"作者のアプリ開発ブログ";
     item.caption = [NSString stringWithFormat:@"caption%d", item.number];
-    item.img.image = [UIImage imageNamed:@"blue_table.png"];
-    item.backImg.image = [UIImage imageNamed:@"blue_table.png"];
+    item.imgString = @"kok_logo_90x90.png";
     item.backImgString = @"blue_table.png";
+    item.url = @"http://ameblo.jp/kok-support/";
     [OthersList addObject:item];
 
     

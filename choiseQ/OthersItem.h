@@ -12,11 +12,14 @@
 // 番号
 @property (nonatomic) int number;
 // 番号下に表示するキャプション
+@property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *caption;
-@property (weak, nonatomic) UIImageView *img;
-@property (weak, nonatomic) UIImageView *backImg;
+//紹介ページ用の画像ファイル名
+@property (strong, nonatomic) NSString * imgString;
+//紹介ページのCell背景のファイル名
 @property (strong, nonatomic) NSString *backImgString;
-
+//紹介先のページURL
+@property (strong, nonatomic) NSString *url;
 
 @end
 

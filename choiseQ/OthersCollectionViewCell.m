@@ -31,8 +31,8 @@
 //Cell選択時
 - (void)awakeFromNib
 {
-    self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
-    self.selectedBackgroundView.backgroundColor = [UIColor blueColor];
+//    self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.bounds];
+//    self.selectedBackgroundView.backgroundColor = [UIColor blueColor];
 }
 
 @end

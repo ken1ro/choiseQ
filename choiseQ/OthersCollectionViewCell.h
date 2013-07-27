@@ -10,8 +10,9 @@
 
 @interface OthersCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic, readonly) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic, readonly) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *cellBackImg;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImg;
+@property (weak, nonatomic) IBOutlet UITextView *mainTextView;
 
 @end

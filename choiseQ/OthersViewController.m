@@ -15,6 +15,7 @@
 @implementation OthersViewController
 @synthesize _collectionView;
 @synthesize items;
+@synthesize tmpItem;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +31,7 @@
     [super loadView];
     //Othersに入れる要素数
     items = [[OthersItemList alloc] init];
+    tmpItem = [[OthersItem alloc]init];
 /*    _items = [NSMutableArray arrayWithCapacity:10];
     for (int i = 0; i < 10; i++) {
         OthersItem *item = [[OthersItem alloc] init];
@@ -66,6 +68,7 @@
     return items.count;
 }
 
+// ここで各CELLの内容を一つずつ格納していく
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // セルオブジェクトを得る
@@ -74,7 +77,9 @@
     NSLog(@"cell number is : %d",indexPath.row);
     OthersItem *item = [items.getOthersList objectAtIndex:indexPath.row];
     // セルオブジェクトのプロパティを設定する
-    cell.captionLabel.text = item.caption;
+    cell.titleLabel.text = item.title;
+    cell.mainTextView.text = item.caption;
+    cell.mainImg.image = [UIImage imageNamed:item.imgString];
     cell.cellBackImg.image = [UIImage imageNamed:item.backImgString];
     
     return cell;
@@ -83,15 +88,31 @@
 //Cell選択時
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    OthersItem *item = [items.getOthersList objectAtIndex:indexPath.row];
-    NSString *message = [NSString stringWithFormat:@"%d\n%@", item.number, item.caption];
+    tmpItem = [items.getOthersList objectAtIndex:indexPath.row];
+    NSString *message = [NSString stringWithFormat:@"%@\n%@", tmpItem.title, tmpItem.caption];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
                                                         message:message
                                                        delegate:nil
                                               cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil];
+                                              otherButtonTitles:@"safariで開きます。", nil];
+    alertView.delegate = self;
     [alertView show];
+}
+// アラートのボタンが押された時に呼ばれるデリゲート
+-(void)alertView:(UIAlertView*)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *url = @"";
+    switch (buttonIndex) {
+        case 0:
+            //１番目のボタンが押されたときの処理を記述する
+            url = self.tmpItem.url;
+            NSLog(@"test0 %@",url);
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];            break;
+            break;
+
+    }
+    
 }
 
 @end

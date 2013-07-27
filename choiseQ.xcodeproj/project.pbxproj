@@ -32,6 +32,7 @@
 		BE60836D179B9D0800634005 /* OthersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE60836C179B9D0800634005 /* OthersCollectionViewCell.m */; };
 		BE608370179BA86900634005 /* OthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE60836F179BA86900634005 /* OthersViewController.m */; };
 		BE608373179CED9700634005 /* OthersItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE608372179CED9700634005 /* OthersItemList.m */; };
+		BE60837517A3A4C800634005 /* kok_logo_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = BE60837417A3A4C800634005 /* kok_logo_90x90.png */; };
 		BE7D20D9174916F3001956A0 /* others_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D6174916F3001956A0 /* others_button.png */; };
 		BE7D20DA174916F3001956A0 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D7174916F3001956A0 /* setting_button.png */; };
 		BE7D20DB174916F3001956A0 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7D20D8174916F3001956A0 /* start_button.png */; };
@@ -117,6 +118,7 @@
 		BE60836F179BA86900634005 /* OthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersViewController.m; sourceTree = "<group>"; };
 		BE608371179CED9700634005 /* OthersItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersItemList.h; sourceTree = "<group>"; };
 		BE608372179CED9700634005 /* OthersItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersItemList.m; sourceTree = "<group>"; };
+		BE60837417A3A4C800634005 /* kok_logo_90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kok_logo_90x90.png; path = img/kok_logo_90x90.png; sourceTree = "<group>"; };
 		BE7D20D6174916F3001956A0 /* others_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others_button.png; path = img/others_button.png; sourceTree = "<group>"; };
 		BE7D20D7174916F3001956A0 /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = img/setting_button.png; sourceTree = "<group>"; };
 		BE7D20D8174916F3001956A0 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = img/start_button.png; sourceTree = "<group>"; };
@@ -271,8 +273,8 @@
 				BE60836F179BA86900634005 /* OthersViewController.m */,
 				BE60836B179B9D0800634005 /* OthersCollectionViewCell.h */,
 				BE60836C179B9D0800634005 /* OthersCollectionViewCell.m */,
-				BE608369179B9C6E00634005 /* OthersItem.m */,
 				BE608368179B9C6E00634005 /* OthersItem.h */,
+				BE608369179B9C6E00634005 /* OthersItem.m */,
 				BE608371179CED9700634005 /* OthersItemList.h */,
 				BE608372179CED9700634005 /* OthersItemList.m */,
 			);
@@ -315,6 +317,7 @@
 		BEA3223E173FAD1200C08BCD /* img */ = {
 			isa = PBXGroup;
 			children = (
+				BE60837417A3A4C800634005 /* kok_logo_90x90.png */,
 				BE0E68681768C391006BEF14 /* blue_table.png */,
 				BE0E68691768C391006BEF14 /* green_table.png */,
 				BE0E686D1768C5B1006BEF14 /* yellow_table.png */,
@@ -451,6 +454,7 @@
 				30122B01176C9F9900C89675 /* choiseQ.sqlite in Resources */,
 				BE5B5534176CBD3400EEC1BF /* title.png in Resources */,
 				BE608367179B9BB300634005 /* OthersCollectionViewCell.xib in Resources */,
+				BE60837517A3A4C800634005 /* kok_logo_90x90.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

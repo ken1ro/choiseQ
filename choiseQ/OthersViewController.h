@@ -11,9 +11,12 @@
 #import "OthersItemList.h"
 #import "OthersCollectionViewCell.h"
 
-@interface OthersViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface OthersViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>{
+    OthersItem *tmpItem;
+}
 @property (weak, nonatomic) IBOutlet UICollectionView *_collectionView;
 @property (retain, nonatomic) OthersItemList *items;
+@property (retain, nonatomic) OthersItem *tmpItem;
 
 @end
 
