@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *mainImg;
 @property (weak, nonatomic) IBOutlet UITextView *mainTextView;
 
+
+
 @end
