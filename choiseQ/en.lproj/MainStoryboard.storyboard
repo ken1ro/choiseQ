@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -347,16 +347,10 @@
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="UR6-QS-r0Z">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="258" image="36096583_m.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-Cc-i7D">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="bgu-7p-FkZ"/>
-                                            <constraint firstAttribute="height" constant="160" id="kdH-gF-NUW"/>
-                                        </constraints>
-                                    </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-R2-F7z">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="705" id="Xe8-FL-Lqq"/>
+                                            <constraint firstAttribute="height" constant="873" id="CUS-Iv-Qau"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -365,13 +359,11 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="centerX" secondItem="jDK-R2-F7z" secondAttribute="centerX" type="default" id="8VA-IF-bBJ"/>
-                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="centerX" secondItem="UR6-QS-r0Z" secondAttribute="centerX" type="default" id="ALg-we-SUF"/>
                                     <constraint firstItem="jDK-R2-F7z" firstAttribute="leading" secondItem="UR6-QS-r0Z" secondAttribute="leading" type="default" id="GR3-fI-z4Y"/>
-                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="168" id="Igk-XL-Juc"/>
+                                    <constraint firstAttribute="bottom" secondItem="jDK-R2-F7z" secondAttribute="bottom" constant="-496" id="Ir4-Cl-EHk"/>
                                     <constraint firstItem="jDK-R2-F7z" firstAttribute="trailing" secondItem="UR6-QS-r0Z" secondAttribute="trailing" type="default" id="LGI-4b-eBh"/>
-                                    <constraint firstItem="5cY-Cc-i7D" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" constant="6" id="RnV-AE-Wsn"/>
-                                    <constraint firstAttribute="bottom" secondItem="5cY-Cc-i7D" secondAttribute="bottom" constant="211" id="cJM-oO-ai3"/>
+                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="top" secondItem="UR6-QS-r0Z" secondAttribute="top" type="default" id="RvN-Q4-Wwa"/>
+                                    <constraint firstItem="jDK-R2-F7z" firstAttribute="centerX" secondItem="UR6-QS-r0Z" secondAttribute="centerX" type="default" id="wK6-VC-ypf"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -410,7 +402,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answerImg" destination="5cY-Cc-i7D" id="AVi-GG-wQf"/>
                         <outlet property="answerScrollView" destination="UR6-QS-r0Z" id="iz9-fe-nMU"/>
                         <outlet property="answerTab" destination="293-iW-yym" id="zYS-em-XCA"/>
                         <outlet property="answerTextView" destination="jDK-R2-F7z" id="ZnO-5V-sI3"/>
@@ -570,7 +561,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="36096583_m.jpg" width="600" height="480"/>
         <image name="True.png" width="420" height="157"/>
         <image name="a.png" width="163" height="163"/>
         <image name="b.png" width="163" height="163"/>
@@ -585,73 +575,13 @@
         <image name="start_button.png" width="242" height="71"/>
         <image name="title.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="AnswerUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="doKaisetsu:"/>
-                <relationship kind="action" name="doMondai:"/>
-                <relationship kind="action" name="doNext:"/>
-                <relationship kind="action" name="doShare:"/>
-                <relationship kind="outlet" name="answerImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="answerScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="answerTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionTab" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="tofImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tofWordImg" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="yourAnswerLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="OthersViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OthersViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="_collectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="QuestionUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="selectA:"/>
-                <relationship kind="action" name="selectB:"/>
-                <relationship kind="action" name="selectC:"/>
-                <relationship kind="action" name="selectD:"/>
-                <relationship kind="outlet" name="QuestionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="questionNoLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="QuizResultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizResultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doHome:"/>
-                <relationship kind="action" name="niseShare:"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="84k-yt-d5P"/>
         <segue reference="Ngw-kI-z65"/>
-        <segue reference="BCQ-Q3-G2c"/>
     </inferredMetricsTieBreakers>
 </document>

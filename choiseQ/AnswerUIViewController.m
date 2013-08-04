@@ -14,7 +14,7 @@
 @end
 
 
-@implementation AnswerUIViewController
+@implementation AnswerUIViewController;
 @synthesize tofImg;
 @synthesize tofWordImg;
 @synthesize tabSwitch;
@@ -34,13 +34,15 @@
     NSLog(@"AnswerUIViewController viewWillAppear");
     
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    NSNumber *qCount = [appDelegate.qList objectAtIndex:appDelegate.qCount - 1];
     
     //前画面で選んだ選択肢を表示
     NSString *yourAnswer = appDelegate.dSelectedAnswer;
+    NSString *correctAnswer = [DataModel getAnswer:qCount];
     self.yourAnswerLbl.text = yourAnswer;
     
     //正解か不正解かを判定する。
-    if ([yourAnswer isEqualToString:[DataModel getAnswer:[NSNumber numberWithInteger:appDelegate.qCount]]]) {
+    if ([yourAnswer isEqualToString:correctAnswer]) {
         //正解なら○と正解を表示
         tofImg.image = [UIImage imageNamed:@"maru.png"];
         tofWordImg.image = [UIImage imageNamed:@"True.png"];
@@ -154,7 +156,8 @@
     }else{
         //そうでなければ、クイズ結果画面に遷移する。
         appDelegate.qCount = 0;
-        [self performSegueWithIdentifier:@"toQuizResultView" sender:self];        
+        [appDelegate qListShuffle];
+        [self performSegueWithIdentifier:@"toQuizResultView" sender:self];
         
     }
 
@@ -163,6 +166,7 @@
 - (IBAction)doHome:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     appDelegate.qCount = 0;
+    [appDelegate qListShuffle];
 }
 
 
@@ -231,30 +235,29 @@
 - (void) selectTabSwitch{
     
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    NSNumber *qCount = [appDelegate.qList objectAtIndex:appDelegate.qCount - 1];
     
+    // 表示用の問題・解答を取得
+    NSString *question    = [DataModel getQuestion:qCount];
+    NSString *choiseA     = [DataModel getChoiseA:qCount];
+    NSString *choiseB     = [DataModel getChoiseB:qCount];
+    NSString *choiseC     = [DataModel getChoiseC:qCount];
+    NSString *choiseD     = [DataModel getChoiseD:qCount];
+    NSString *description = [DataModel getDescription:qCount];
+
     if (self.tabSwitch == 1){
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_on_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_off_2.png"] forState:UIControlStateNormal];
         
         //ここで表示する文章を変える。
-        NSString *description = [DataModel getDescription:[NSNumber numberWithInteger:appDelegate.qCount]];
-
         self.answerTextView.text = description;
         
     }else{
         [self.answerTab setBackgroundImage:[UIImage imageNamed:@"kaisetsu_tab_off_2.png"] forState:UIControlStateNormal];
         [self.questionTab setBackgroundImage:[UIImage imageNamed:@"mondai_tab_on_2.png"] forState:UIControlStateNormal];
 
-        // 表示用の問題を取得
-        NSString *question    = [DataModel getQuestion:[NSNumber numberWithInteger:appDelegate.qCount]];
-        NSString *choiseA     = [DataModel getChoiseA:[NSNumber numberWithInteger:appDelegate.qCount]];
-        NSString *choiseB     = [DataModel getChoiseB:[NSNumber numberWithInteger:appDelegate.qCount]];
-        NSString *choiseC     = [DataModel getChoiseC:[NSNumber numberWithInteger:appDelegate.qCount]];
-        NSString *choiseD     = [DataModel getChoiseD:[NSNumber numberWithInteger:appDelegate.qCount]];
-
         //ここで表示する文章を変える。
         self.answerTextView.text =[NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
-
         
     }
     
@@ -272,7 +275,7 @@
     self.scrollView.frame = tmpframe;
     
     NSLog(@"test height = %f", tmpframe.size.height);
-     */
+    */
 }
 
 
