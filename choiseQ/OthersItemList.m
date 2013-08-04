@@ -76,7 +76,26 @@
     item.url = @"http://ameblo.jp/kok-support/";
     [OthersList addObject:item];
 
-    
+    /*** 4個目の要素 ***/
+    item = [[OthersItem alloc] init];
+    item.number = 4;
+    item.title = @"作者のアプリ開発ブログ";
+    item.caption = [NSString stringWithFormat:@"caption%d", item.number];
+    item.imgString = @"kok_logo_90x90.png";
+    item.backImgString = @"green_table.png";
+    item.url = @"http://ameblo.jp/kok-support/";
+    [OthersList addObject:item];
+
+    /*** 5個目の要素 ***/
+    item = [[OthersItem alloc] init];
+    item.number = 5;
+    item.title = @"作者のアプリ開発ブログ";
+    item.caption = [NSString stringWithFormat:@"caption%d", item.number];
+    item.imgString = @"kok_logo_90x90.png";
+    item.backImgString = @"yellow_table.png";
+    item.url = @"http://ameblo.jp/kok-support/";
+    [OthersList addObject:item];
+
 }
 
 - (NSMutableArray *) getOthersList{

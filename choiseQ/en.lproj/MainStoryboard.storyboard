@@ -451,7 +451,7 @@
                             </collectionView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD3-uo-8CM">
                                 <items>
-                                    <navigationItem title="Title" id="hMV-0G-EEx">
+                                    <navigationItem title="紹介ページ" id="hMV-0G-EEx">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="LAl-FO-jms">
                                             <connections>
                                                 <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="BCQ-Q3-G2c"/>
