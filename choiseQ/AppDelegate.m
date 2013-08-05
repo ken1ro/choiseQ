@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DataModel.h"
 
 @implementation AppDelegate
 @synthesize dSelectedAnswer;
@@ -17,9 +18,19 @@
     // Override point for customization after application launch.
     self.dSelectedAnswer = @"";
     self.qCount = 0;
+    
+    self.qList = [[NSMutableArray alloc] init];
+    
+    int questionCount = [DataModel getQuestionCount];
+    for (int i = 0; i < questionCount; i++) {
+        [self.qList addObject:[NSNumber numberWithInt:i+1]];
+    }
+    
+    [self qListShuffle];
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -45,6 +56,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)qListShuffle
+{
+    for (int i = [self.qList count] - 1; i >= 0; i--) {
+        int j = rand() % ( i + 1 );
+        [self.qList exchangeObjectAtIndex:i withObjectAtIndex:j];
+    }
 }
 
 @end

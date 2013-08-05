@@ -31,21 +31,20 @@
 }
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
-    //後で消す
-    //debug
-    NSLog(@"QuestionUIViewController viewWillAppear");
-
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
  
+    NSLog(@"Question Number: %@", [appDelegate.qList objectAtIndex:appDelegate.qCount]);
+
     //出題数をカウント
     appDelegate.qCount ++;
+    NSNumber *qCount = [appDelegate.qList objectAtIndex:appDelegate.qCount - 1];
     
     //DBから問題文、選択肢の取得
-    NSString *question = [DataModel getQuestion:[NSNumber numberWithInteger:appDelegate.qCount]];
-    NSString *choiseA  = [DataModel getChoiseA:[NSNumber numberWithInteger:appDelegate.qCount]];
-    NSString *choiseB  = [DataModel getChoiseB:[NSNumber numberWithInteger:appDelegate.qCount]];
-    NSString *choiseC  = [DataModel getChoiseC:[NSNumber numberWithInteger:appDelegate.qCount]];
-    NSString *choiseD  = [DataModel getChoiseD:[NSNumber numberWithInteger:appDelegate.qCount]];
+    NSString *question = [DataModel getQuestion:qCount];
+    NSString *choiseA  = [DataModel getChoiseA:qCount];
+    NSString *choiseB  = [DataModel getChoiseB:qCount];
+    NSString *choiseC  = [DataModel getChoiseC:qCount];
+    NSString *choiseD  = [DataModel getChoiseD:qCount];
 
     self.questionNoLbl.text = [NSString stringWithFormat:@"第 %d 問", appDelegate.qCount];
     self.QuestionTextView.text = [NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
