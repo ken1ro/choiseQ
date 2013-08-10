@@ -14,7 +14,7 @@
 		3079F352176C7BAA001E0932 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3079F34C176C7BAA001E0932 /* FMDatabaseQueue.m */; };
 		3079F353176C7BAA001E0932 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3079F34E176C7BAA001E0932 /* FMResultSet.m */; };
 		3079F356176C7BCB001E0932 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3079F355176C7BCB001E0932 /* DataModel.m */; };
-		30B697DA17A51CB8009D478C /* choiseQ.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 30B697D917A51CB8009D478C /* choiseQ.sqlite */; };
+		307A15EF17B5F453008D8492 /* choiseQ.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 307A15EE17B5F453008D8492 /* choiseQ.sqlite */; };
 		BE0E686B1768C391006BEF14 /* blue_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E68681768C391006BEF14 /* blue_table.png */; };
 		BE0E686C1768C391006BEF14 /* green_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E68691768C391006BEF14 /* green_table.png */; };
 		BE0E686E1768C5B1006BEF14 /* yellow_table.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0E686D1768C5B1006BEF14 /* yellow_table.png */; };
@@ -99,7 +99,7 @@
 		3079F34E176C7BAA001E0932 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		3079F354176C7BCB001E0932 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		3079F355176C7BCB001E0932 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
-		30B697D917A51CB8009D478C /* choiseQ.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = choiseQ.sqlite; sourceTree = "<group>"; };
+		307A15EE17B5F453008D8492 /* choiseQ.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = choiseQ.sqlite; sourceTree = "<group>"; };
 		BE0E68681768C391006BEF14 /* blue_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_table.png; sourceTree = "<group>"; };
 		BE0E68691768C391006BEF14 /* green_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_table.png; sourceTree = "<group>"; };
 		BE0E686D1768C5B1006BEF14 /* yellow_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow_table.png; path = img/yellow_table.png; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		BE9E8BEA173794FA00495938 /* choiseQ */ = {
 			isa = PBXGroup;
 			children = (
-				30B697D917A51CB8009D478C /* choiseQ.sqlite */,
+				307A15EE17B5F453008D8492 /* choiseQ.sqlite */,
 				3079F344176C7B8F001E0932 /* FMDB */,
 				BEA3223E173FAD1200C08BCD /* img */,
 				BE9E8BF3173794FA00495938 /* AppDelegate.h */,
@@ -478,7 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9E8C13173794FA00495938 /* InfoPlist.strings in Resources */,
-				30B697DA17A51CB8009D478C /* choiseQ.sqlite in Resources */,
+				307A15EF17B5F453008D8492 /* choiseQ.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
