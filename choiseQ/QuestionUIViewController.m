@@ -47,8 +47,12 @@
     NSString *choiseD  = [DataModel getChoiseD:qCount];
 
     self.questionNoLbl.text = [NSString stringWithFormat:@"第 %d 問", appDelegate.qCount];
-    self.QuestionTextView.text = [NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
-
+    //self.QuestionTextView.text = [NSString stringWithFormat:@"%@\n\nA: %@\nB: %@\nC: %@\nD: %@", question, choiseA, choiseB, choiseC, choiseD];
+    self.QuestionTextView.text = [NSString stringWithFormat:@"%@", question];
+    self.ChoiseATextView.text = [NSString stringWithFormat:@"%@", choiseA];
+    self.ChoiseBTextView.text = [NSString stringWithFormat:@"%@", choiseB];
+    self.ChoiseCTextView.text = [NSString stringWithFormat:@"%@", choiseC];
+    self.ChoiseDTextView.text = [NSString stringWithFormat:@"%@", choiseD];
 
 }
 
