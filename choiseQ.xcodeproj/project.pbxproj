@@ -76,6 +76,7 @@
 		BEB72B2217B6025C00BE3B14 /* b_long.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB72B1F17B6025C00BE3B14 /* b_long.png */; };
 		BEB72B2317B6025C00BE3B14 /* c_long.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB72B2017B6025C00BE3B14 /* c_long.png */; };
 		BEB72B2417B6025C00BE3B14 /* d_long.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB72B2117B6025C00BE3B14 /* d_long.png */; };
+		BEB72B2517B6085000BE3B14 /* choiseQ.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 307A15EE17B5F453008D8492 /* choiseQ.sqlite */; };
 		BEE37E99175B5EDB00ADD89F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE37E98175B5EDB00ADD89F /* iAd.framework */; };
 /* End PBXBuildFile section */
 
@@ -486,6 +487,7 @@
 				BEB72B2217B6025C00BE3B14 /* b_long.png in Resources */,
 				BEB72B2317B6025C00BE3B14 /* c_long.png in Resources */,
 				BEB72B2417B6025C00BE3B14 /* d_long.png in Resources */,
+				BEB72B2517B6085000BE3B14 /* choiseQ.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
