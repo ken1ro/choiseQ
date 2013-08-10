@@ -22,6 +22,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionNoLbl;
 @property (nonatomic ,retain) NSString *selectedAnswerBtn;
 @property (weak, nonatomic) IBOutlet UITextView *QuestionTextView;
+@property (weak, nonatomic) IBOutlet UITextView *ChoiseATextView;
+@property (weak, nonatomic) IBOutlet UITextView *ChoiseBTextView;
+@property (weak, nonatomic) IBOutlet UITextView *ChoiseCTextView;
+@property (weak, nonatomic) IBOutlet UITextView *ChoiseDTextView;
+
 
 ///// 広告用　/////
 @property (nonatomic, assign) BOOL bannerIsVisible;
