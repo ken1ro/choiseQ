@@ -116,6 +116,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="kYe-Od-oZm"/>
                                 </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -137,6 +138,7 @@
                                     <constraint firstAttribute="height" constant="60" id="C4C-9K-nfk"/>
                                     <constraint firstAttribute="width" constant="260" id="bQ1-zC-GDw"/>
                                 </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -154,6 +156,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="地道な下半身のトレーニングと強靭な肉体から作り上げられた、まくのうち一歩の必殺技。相手にコーナーを背負わせた状態で勝負を決めるときに使う" translatesAutoresizingMaskIntoConstraints="NO" id="wmB-M2-Hbz">
+                                <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -178,6 +181,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="qe9-nd-TSC"/>
                                 </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
