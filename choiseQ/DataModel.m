@@ -39,10 +39,10 @@
     // もしシミュレーターのDocumentsフォルダにDBが無ければ、.appフォルダからコピー
     NSFileManager *fm = [NSFileManager defaultManager];
     NSError *error;
-    if(![fm fileExistsAtPath:dbpath]){
+    //if(![fm fileExistsAtPath:dbpath]){
         NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:DB_FILE_NAME];
         [fm copyItemAtPath:defaultDBPath toPath:dbpath error:&error];
-    }
+    //}
 
     return dbpath;
 }
