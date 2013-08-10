@@ -115,10 +115,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-EM-dsH">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" type="user" id="2AC-rE-fUi"/>
-                                    <constraint firstAttribute="width" constant="47" id="Cmi-fN-d12"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="A" image="a.png">
+                                <state key="normal" title="A" image="a_long.png">
                                     <color key="titleColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -131,10 +130,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ay-au-UXw">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="Od4-NA-BQj"/>
+                                    <constraint firstAttribute="height" constant="44" id="6Jy-c3-aa5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="B" image="b.png">
+                                <state key="normal" title="B" image="b_long.png">
                                     <color key="titleColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -147,10 +146,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edn-cW-SfT">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="eFJ-b9-MHI"/>
+                                    <constraint firstAttribute="height" constant="44" id="wdN-v6-W5q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="C" image="c.png">
+                                <state key="normal" title="C" image="c_long.png">
                                     <color key="titleColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -163,10 +162,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-H1-HhM">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="UVk-Uj-sCP"/>
+                                    <constraint firstAttribute="height" constant="44" id="oyO-43-pH4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="D" image="d.png">
+                                <state key="normal" title="D" image="d_long.png">
                                     <color key="titleColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -180,7 +179,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-Dv-YwF">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="375" id="W0T-B8-iMH"/>
+                                    <constraint firstAttribute="height" constant="271" id="GZo-qP-v3a"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" cyan="0.66788321167883213" magenta="0.022842764854431152" yellow="0.36131386861313869" black="0.20072992700729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -203,24 +202,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="edn-cW-SfT" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="top" type="default" id="0PP-RB-V0s"/>
-                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" type="default" id="5aU-4v-iJT"/>
-                            <constraint firstAttribute="trailing" secondItem="3Ge-H1-HhM" secondAttribute="trailing" constant="32" id="6NZ-7i-htC"/>
-                            <constraint firstItem="mLn-EM-dsH" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="35" id="7CC-LV-8xZ"/>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8Vo-hN-3cd"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9Z4-a8-lWt"/>
                             <constraint firstAttribute="trailing" secondItem="TY2-Dv-YwF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="A8a-ni-Peh"/>
-                            <constraint firstAttribute="bottom" secondItem="mLn-EM-dsH" secondAttribute="bottom" constant="54" type="user" id="CkW-zz-UVe"/>
+                            <constraint firstItem="9Ay-au-UXw" firstAttribute="top" secondItem="mLn-EM-dsH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="F5H-Tu-P6Q"/>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="G4h-eM-d7v"/>
+                            <constraint firstAttribute="trailing" secondItem="edn-cW-SfT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Is3-Ua-rOU"/>
                             <constraint firstItem="TY2-Dv-YwF" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Iwm-Mk-3f7"/>
-                            <constraint firstItem="TY2-Dv-YwF" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="55" id="J9K-Ks-ngs"/>
+                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KTq-cJ-7go"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ay-au-UXw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NcI-aa-HBt"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pvs-Po-NkV"/>
-                            <constraint firstItem="9Ay-au-UXw" firstAttribute="bottom" secondItem="mLn-EM-dsH" secondAttribute="bottom" type="default" id="Xyb-ye-jZ1"/>
-                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="top" secondItem="edn-cW-SfT" secondAttribute="top" type="default" id="c0c-Da-1nI"/>
+                            <constraint firstItem="3Ge-H1-HhM" firstAttribute="top" secondItem="edn-cW-SfT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UL2-FW-ONH"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ge-H1-HhM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ygq-oi-uNL"/>
+                            <constraint firstItem="9Ay-au-UXw" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ZuS-8k-GxE"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" type="default" id="eZe-Ah-EQH"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="17" id="hQz-bv-Z9B"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="14" id="iJs-lF-vUA"/>
-                            <constraint firstItem="edn-cW-SfT" firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" type="default" id="mWe-PK-YJ1"/>
-                            <constraint firstItem="9Ay-au-UXw" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="104" id="tlA-Gk-eEA"/>
-                            <constraint firstAttribute="trailing" secondItem="edn-cW-SfT" secondAttribute="trailing" constant="97" type="user" id="vE7-tJ-wCe"/>
-                            <constraint firstItem="9Ay-au-UXw" firstAttribute="top" secondItem="mLn-EM-dsH" secondAttribute="top" type="default" id="wev-J0-dqt"/>
+                            <constraint firstAttribute="trailing" secondItem="mLn-EM-dsH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="joR-SZ-CDi"/>
+                            <constraint firstItem="TY2-Dv-YwF" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qtb-bE-Im5"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ge-H1-HhM" secondAttribute="bottom" constant="54" id="sAf-Gf-B8Z"/>
                             <constraint firstAttribute="trailing" secondItem="vyf-II-Iv4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zrN-ZW-sGE"/>
                         </constraints>
                     </view>
@@ -562,10 +562,10 @@
     </scenes>
     <resources>
         <image name="True.png" width="420" height="157"/>
-        <image name="a.png" width="163" height="163"/>
-        <image name="b.png" width="163" height="163"/>
-        <image name="c.png" width="163" height="163"/>
-        <image name="d.png" width="163" height="163"/>
+        <image name="a_long.png" width="1011" height="163"/>
+        <image name="b_long.png" width="1011" height="163"/>
+        <image name="c_long.png" width="1011" height="163"/>
+        <image name="d_long.png" width="1011" height="163"/>
         <image name="kaisetsu_tab_on_2.png" width="249" height="39"/>
         <image name="maru.png" width="324" height="321"/>
         <image name="mondai_tab_off_2.png" width="249" height="39"/>
