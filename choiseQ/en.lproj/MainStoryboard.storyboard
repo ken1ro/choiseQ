@@ -114,7 +114,8 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="地道な下半身のトレーニングと強靭な肉体から作り上げられた、まくのうち一歩の必殺技。相手にコーナーを背負わせた状態で勝負を決めるときに使う" translatesAutoresizingMaskIntoConstraints="NO" id="Cqt-dv-LxI">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="kYe-Od-oZm"/>
+                                    <constraint firstAttribute="width" constant="260" id="hCj-ij-DNY"/>
+                                    <constraint firstAttribute="height" constant="60" id="zGL-kJ-zDd"/>
                                 </constraints>
                                 <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -136,7 +137,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="地道な下半身のトレーニングと強靭な肉体から作り上げられた、まくのうち一歩の必殺技。相手にコーナーを背負わせた状態で勝負を決めるときに使う" translatesAutoresizingMaskIntoConstraints="NO" id="ID3-B8-6n8">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="C4C-9K-nfk"/>
-                                    <constraint firstAttribute="width" constant="260" id="bQ1-zC-GDw"/>
                                 </constraints>
                                 <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -156,15 +156,14 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="地道な下半身のトレーニングと強靭な肉体から作り上げられた、まくのうち一歩の必殺技。相手にコーナーを背負わせた状態で勝負を決めるときに使う" translatesAutoresizingMaskIntoConstraints="NO" id="wmB-M2-Hbz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4ly-2b-oIT"/>
+                                </constraints>
                                 <color key="textColor" red="0.20000000000000001" green="0.51764705879999995" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edn-cW-SfT">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="WsD-Tc-ort"/>
-                                    <constraint firstAttribute="height" constant="60" id="tmM-fG-m3t"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="C" image="c_long.png">
                                     <color key="titleColor" cyan="0.66788321169999998" magenta="0.022842764849999999" yellow="0.36131386859999998" black="0.200729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -201,7 +200,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-Dv-YwF">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="192" id="n9M-NO-4Wi"/>
+                                    <constraint firstAttribute="width" constant="300" id="doy-vW-4IW"/>
+                                    <constraint firstAttribute="height" constant="95" id="mcA-fC-eA3"/>
+                                    <constraint firstAttribute="height" priority="388" constant="192" type="user" id="n9M-NO-4Wi"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" cyan="0.66788321167883213" magenta="0.022842764854431152" yellow="0.36131386861313869" black="0.20072992700729927" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -226,37 +227,38 @@
                         <constraints>
                             <constraint firstItem="wmB-M2-Hbz" firstAttribute="trailing" secondItem="edn-cW-SfT" secondAttribute="trailing" type="default" id="2IZ-Ie-dih"/>
                             <constraint firstItem="ID3-B8-6n8" firstAttribute="trailing" secondItem="9Ay-au-UXw" secondAttribute="trailing" type="default" id="361-2V-b8r"/>
-                            <constraint firstAttribute="bottom" secondItem="RsU-05-GrF" secondAttribute="bottom" constant="51" id="9aK-Hb-iSr"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="250" type="user" id="68i-D5-6eC"/>
+                            <constraint firstItem="Cqt-dv-LxI" firstAttribute="trailing" secondItem="9Ay-au-UXw" secondAttribute="trailing" type="default" id="AVo-Rh-q9I"/>
                             <constraint firstItem="RsU-05-GrF" firstAttribute="bottom" secondItem="3Ge-H1-HhM" secondAttribute="bottom" type="default" id="DVj-0x-11s"/>
-                            <constraint firstItem="ID3-B8-6n8" firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" type="default" id="JR9-Ar-DBp"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" constant="175" id="Dzk-BD-mq6"/>
+                            <constraint firstItem="ID3-B8-6n8" firstAttribute="bottom" secondItem="9Ay-au-UXw" secondAttribute="bottom" type="user" id="JR9-Ar-DBp"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pvs-Po-NkV"/>
                             <constraint firstItem="wmB-M2-Hbz" firstAttribute="top" secondItem="edn-cW-SfT" secondAttribute="top" type="default" id="Q48-6t-48j"/>
                             <constraint firstItem="TY2-Dv-YwF" firstAttribute="top" secondItem="vyf-II-Iv4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QCw-NF-VPi"/>
-                            <constraint firstItem="ID3-B8-6n8" firstAttribute="trailing" secondItem="edn-cW-SfT" secondAttribute="trailing" type="default" id="VHr-VN-5KY"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ge-H1-HhM" secondAttribute="bottom" constant="51" id="SUE-jH-jxO"/>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="trailing" secondItem="9Ay-au-UXw" secondAttribute="trailing" type="default" id="Uf8-iN-rMt"/>
                             <constraint firstItem="ID3-B8-6n8" firstAttribute="leading" secondItem="Cqt-dv-LxI" secondAttribute="leading" type="default" id="Vh3-Hu-jMG"/>
                             <constraint firstItem="RsU-05-GrF" firstAttribute="top" secondItem="3Ge-H1-HhM" secondAttribute="top" type="default" id="XzQ-jH-nT4"/>
                             <constraint firstItem="RsU-05-GrF" firstAttribute="trailing" secondItem="3Ge-H1-HhM" secondAttribute="trailing" type="default" id="Y6v-MR-uXj"/>
                             <constraint firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" constant="113" id="Zfw-kE-trv"/>
-                            <constraint firstItem="edn-cW-SfT" firstAttribute="leading" secondItem="9Ay-au-UXw" secondAttribute="leading" type="default" id="arN-Kx-1Wk"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="trailing" secondItem="TY2-Dv-YwF" secondAttribute="trailing" type="default" id="Zqa-cq-f7P"/>
                             <constraint firstItem="wmB-M2-Hbz" firstAttribute="bottom" secondItem="edn-cW-SfT" secondAttribute="bottom" type="default" id="c77-OW-TKb"/>
-                            <constraint firstAttribute="bottom" secondItem="ID3-B8-6n8" secondAttribute="bottom" constant="175" id="cZg-mS-NJ5"/>
-                            <constraint firstItem="TY2-Dv-YwF" firstAttribute="trailing" secondItem="Cqt-dv-LxI" secondAttribute="trailing" type="default" id="dOl-NY-9lv"/>
                             <constraint firstItem="mLn-EM-dsH" firstAttribute="leading" secondItem="9Ay-au-UXw" secondAttribute="leading" type="default" id="dwO-xw-LxO"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="leading" secondItem="6X7-1M-1Nw" secondAttribute="leading" type="default" id="eZe-Ah-EQH"/>
                             <constraint firstItem="Cqt-dv-LxI" firstAttribute="trailing" secondItem="mLn-EM-dsH" secondAttribute="trailing" type="default" id="fiQ-xY-sTI"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="centerX" secondItem="6X7-1M-1Nw" secondAttribute="centerX" type="default" id="hM4-jU-x34"/>
                             <constraint firstItem="8mP-fY-MLw" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="17" id="hQz-bv-Z9B"/>
+                            <constraint firstItem="edn-cW-SfT" firstAttribute="leading" secondItem="9Ay-au-UXw" secondAttribute="leading" type="default" id="iIK-ul-Rcf"/>
                             <constraint firstItem="vyf-II-Iv4" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" constant="14" id="iJs-lF-vUA"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="top" secondItem="Cqt-dv-LxI" secondAttribute="top" type="default" id="jd2-Jy-yTB"/>
                             <constraint firstItem="ID3-B8-6n8" firstAttribute="top" secondItem="9Ay-au-UXw" secondAttribute="top" type="default" id="lVX-oy-c7S"/>
                             <constraint firstItem="wmB-M2-Hbz" firstAttribute="leading" secondItem="RsU-05-GrF" secondAttribute="leading" type="default" id="lkM-V8-9te"/>
                             <constraint firstItem="Cqt-dv-LxI" firstAttribute="bottom" secondItem="mLn-EM-dsH" secondAttribute="bottom" type="default" id="pRM-2m-Pc9"/>
                             <constraint firstItem="3Ge-H1-HhM" firstAttribute="leading" secondItem="edn-cW-SfT" secondAttribute="leading" type="default" id="pcE-3E-et9"/>
-                            <constraint firstItem="mLn-EM-dsH" firstAttribute="centerX" secondItem="6X7-1M-1Nw" secondAttribute="centerX" type="default" id="tv3-FH-YNV"/>
                             <constraint firstItem="3Ge-H1-HhM" firstAttribute="trailing" secondItem="edn-cW-SfT" secondAttribute="trailing" type="default" id="upO-dZ-2ij"/>
-                            <constraint firstItem="mLn-EM-dsH" firstAttribute="top" secondItem="TY2-Dv-YwF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vM4-sL-3vC"/>
-                            <constraint firstItem="Cqt-dv-LxI" firstAttribute="top" secondItem="TY2-Dv-YwF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vRW-Ue-Vox"/>
                             <constraint firstItem="ID3-B8-6n8" firstAttribute="leading" secondItem="wmB-M2-Hbz" secondAttribute="leading" type="default" id="wmq-ym-lLN"/>
+                            <constraint firstItem="mLn-EM-dsH" firstAttribute="top" secondItem="6X7-1M-1Nw" secondAttribute="top" priority="466" constant="250" type="user" id="wqm-yB-faj"/>
                             <constraint firstItem="TY2-Dv-YwF" firstAttribute="leading" secondItem="mLn-EM-dsH" secondAttribute="leading" type="default" id="xvv-Bg-HCe"/>
-                            <constraint firstItem="mLn-EM-dsH" firstAttribute="trailing" secondItem="9Ay-au-UXw" secondAttribute="trailing" type="default" id="yqy-qb-mp2"/>
                             <constraint firstAttribute="trailing" secondItem="vyf-II-Iv4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zrN-ZW-sGE"/>
                         </constraints>
                     </view>
@@ -666,6 +668,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
