@@ -201,7 +201,6 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-Dv-YwF">
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" type="user" id="1FX-kH-zin"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" type="user" id="6mc-FJ-Bth"/>
