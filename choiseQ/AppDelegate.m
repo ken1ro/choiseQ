@@ -8,10 +8,14 @@
 
 #import "AppDelegate.h"
 #import "DataModel.h"
+#define SCREEN_TYPE_3_5 @"iphone4"
+#define SCREEN_TYPE_4_0 @"iphone5"
+
 
 @implementation AppDelegate
 @synthesize dSelectedAnswer;
 @synthesize qCount;
+@synthesize screenType;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -35,6 +39,7 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -51,6 +56,22 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    /************************************************************************
+     * スクリーンサイズを取得しグローバル変数に格納する。                              *
+     * 取得したスクリーンサイズを使用して各画面内のサイズ調整に使用する。                 *
+     *                                                                      *
+     ************************************************************************/
+    
+    //スクリーンサイズを取得
+    CGRect screenSize = [UIScreen mainScreen].bounds;
+    if (screenSize.size.height <= 480) {
+        // 縦幅が小さい場合には、3.5インチ用と判断
+        screenType = SCREEN_TYPE_3_5;
+    } else {
+        // 立て幅が長い場合には、4.0インチ用のXibファイルを指定します。
+        screenType = SCREEN_TYPE_4_0;
+    }
+    NSLog(@"The screen type of this iphone is %@",screenType);
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

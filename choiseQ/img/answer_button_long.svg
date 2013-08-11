@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-36.491138"
+     inkscape:cx="534.93743"
      inkscape:cy="1183.2958"
      inkscape:document-units="px"
-     inkscape:current-layer="g3099"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1101"
      inkscape:window-height="738"
@@ -183,7 +183,7 @@
     <g
        inkscape:export-ydpi="70"
        inkscape:export-xdpi="70"
-       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/a_long.png"
+       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/c_long.png"
        id="g3073"
        transform="translate(-11.428571,-257.14286)">
       <flowRoot
@@ -213,7 +213,7 @@
     <g
        inkscape:export-ydpi="70"
        inkscape:export-xdpi="70"
-       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/a_long.png"
+       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/b_long.png"
        id="g3087"
        transform="translate(-31.428571,-528.57143)">
       <flowRoot
@@ -241,30 +241,33 @@
     <g
        inkscape:export-ydpi="70"
        inkscape:export-xdpi="70"
-       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/a_long.png"
+       inkscape:export-filename="/Users/ken/Work/choiseQ/choiseQ/img/d_long.png"
        id="g3099"
        transform="translate(-45.714286,-771.42857)">
-      <flowRoot
-         xml:space="preserve"
-         id="flowRoot3101"
-         style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans"
-         transform="translate(-106.07997,-264.05469)"><flowRegion
-           id="flowRegion3103"><rect
-             id="rect3105"
-             width="157.14285"
-             height="185.71428"
-             x="191.42857"
-             y="318.07648"
-             style="font-size:144px;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /></flowRegion><flowPara
-           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Chalkboard;-inkscape-font-specification:Chalkboard Bold"
-           id="flowPara3111">D</flowPara></flowRoot>      <rect
-         ry="34.285713"
-         y="43.790745"
-         x="34.285706"
-         height="200"
-         width="1290"
-         id="rect3109"
-         style="fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         id="g3115">
+        <flowRoot
+           transform="translate(-106.07997,-264.05469)"
+           style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Sans"
+           id="flowRoot3101"
+           xml:space="preserve"><flowRegion
+             id="flowRegion3103"><rect
+               style="font-size:144px;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               y="318.07648"
+               x="191.42857"
+               height="185.71428"
+               width="157.14285"
+               id="rect3105" /></flowRegion><flowPara
+             id="flowPara3111"
+             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Chalkboard;-inkscape-font-specification:Chalkboard Bold">D</flowPara></flowRoot>        <rect
+           style="fill:none;stroke:#338475;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect3109"
+           width="1290"
+           height="200"
+           x="34.285706"
+           y="43.790745"
+           ry="34.285713" />
+      </g>
     </g>
   </g>
 </svg>

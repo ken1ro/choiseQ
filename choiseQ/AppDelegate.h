@@ -10,6 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
     NSString *dSelectedAnswer;
+    NSString *screenType;
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -22,6 +23,9 @@
 
 //問題の出題順番を格納する変数
 @property (nonatomic, retain) NSMutableArray *qList;
+
+//iphoneの画面サイズを格納する変数
+@property (nonatomic, retain) NSString *screenType;
 
 - (void)qListShuffle;
 

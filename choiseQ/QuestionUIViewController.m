@@ -8,6 +8,8 @@
 
 #import "QuestionUIViewController.h"
 #import "DataModel.h"
+#define SCREEN_TYPE_3_5 @"iphone4"
+#define SCREEN_TYPE_4_0 @"iphone5"
 
 @interface QuestionUIViewController ()
 
@@ -32,7 +34,7 @@
 //view初期化時
 - (void)viewWillAppear:(BOOL)animated{
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
- 
+    
     NSLog(@"Question Number: %@", [appDelegate.qList objectAtIndex:appDelegate.qCount]);
 
     //出題数をカウント
@@ -53,12 +55,30 @@
     self.ChoiseBTextView.text = [NSString stringWithFormat:@"%@", choiseB];
     self.ChoiseCTextView.text = [NSString stringWithFormat:@"%@", choiseC];
     self.ChoiseDTextView.text = [NSString stringWithFormat:@"%@", choiseD];
+    
+    //    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    if([appDelegate.screenType isEqual: SCREEN_TYPE_3_5]){
+        [self.QuestionTextView setFrame:CGRectMake(self.QuestionTextView.frame.origin.x, self.QuestionTextView.frame.origin.y, self.QuestionTextView.frame.size.width, 110)];
+        
+    }else{
+        NSLog(@"trest");
+        /*[self.QuestionTextView setFrame:CGRectMake(self.QuestionTextView.frame.origin.x, self.QuestionTextView.frame.origin.y, self.QuestionTextView.frame.size.width, 190)];
+        */
+        
+        CGRect frame = self.QuestionTextView.frame;
+        frame.size.height = 190;//self.QuestionTextView.contentSize.height;
+        self.QuestionTextView.frame = frame;
+    }
+    NSLog(@"QuestionTextView is %f",self.QuestionTextView.frame.size.height);
+    NSLog(@"QuestionTextView is c%f",self.QuestionTextView.contentSize.height);
+    NSLog(@"Optimize textView to screen type --> %@",appDelegate.screenType);
 
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 	// Do any additional setup after loading the view.
     //////////////////////////    広告表示用    //////////////////////////
     ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
